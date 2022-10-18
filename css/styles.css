@@ -143,6 +143,7 @@ header{
     padding: 24px 215px;
     display:flex;
     flex-direction: row;
+    border-bottom: 1px solid #ECECEC;;
 }
 .site-nav>li{
         margin-left: 50px;
@@ -290,7 +291,7 @@ header{
 
 /* ==================Portfolio Page==================== */
 
-main{
+.main-portfolio{
     padding: 94px 215px;
 }
 .porfolio-buttons-row{
@@ -304,18 +305,24 @@ main{
 
 .portfolio-cards{
     padding-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
 }
 .portfolio-card-item{
     border: 1px solid #EEEEEE;
     width: 370px;
     height: 404px;
-    margin: 30px;
+    margin-bottom: 30px;
 }
 .portfolio-card-item>h3{
     padding: 20px 20px 0 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
+
+
 
 }
 .portfolio-card-item>p{
