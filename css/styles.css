@@ -82,6 +82,7 @@ a{
 }
 .button.secondary{
     background-color: var(--section-color);
+    cursor: pointer;
     color: var(--primary-text-color);
     font-family:  'Roboto', sans-serif;
     letter-spacing: 0.03em;
@@ -98,6 +99,7 @@ a{
 .button.secondary:hover,.button.secondary:focus{
     background-color: var(--accent-color);
     color: var(--pure-whie-logo-color);
+    cursor: pointer;
     font-family:  'Roboto', sans-serif;
     border-radius: 4px;
     height: 38px;
