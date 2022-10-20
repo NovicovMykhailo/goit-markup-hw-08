@@ -274,12 +274,12 @@ header{
 
 .team-card>h3{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     margin-top: 30px;
 }
 .team-card>p{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     color: var(--secondary-text-color);
     margin-top: 10px;
 }
@@ -330,14 +330,14 @@ header{
     padding: 20px 20px 0 24px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
 
 
 
 }
 .portfolio-card-item>p{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     color: var(--secondary-text-color);
     padding: 4px 0 0 24px;
     margin: 0;
@@ -363,16 +363,16 @@ footer{
 }
 .address-link{
     color: var(--pure-whie-logo-color);
-    line-height: 24px;
+    line-height: 1.71;
     text-decoration: none;
 }
 .address-mail{
-    line-height: 24px;
+    line-height: 1.71;
     text-decoration: none;
     color:var(--footer-link-color);
 }
 .address-tel{
-    line-height: 24px;
+    line-height: 1.71;
     text-decoration: none;
     color: var(--footer-link-color);
 }
