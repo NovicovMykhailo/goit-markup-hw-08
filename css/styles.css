@@ -28,26 +28,24 @@
 
 /* ==================BODY==================== */
 
-h1,h2,h3,h4,ul,li{
+h1,h2,h3,h4,ul,li,p{
     margin:0;
     padding:0;
 }
-li{list-style: none;}
+ul{list-style: none;}
 
 body{
     background-color: var(--primary-page-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.14;
-    width: 1600px;
     margin: auto;
 }
 
 .section-title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -90,6 +88,7 @@ body{
     font-family: inherit;
     font-size: 16px;
     line-height: 1.625;
+    font-weight: 500;
     border-radius: 4px;
     height: 38px;
     text-align: center;
@@ -105,6 +104,7 @@ body{
     height: 38px;
     font-size: 16px;
     line-height: 1.625;
+    font-weight: 500;
     text-align: center;
     padding: 6px 22px ;
     border: none;
@@ -118,7 +118,6 @@ body{
 
 .logo{
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
@@ -136,7 +135,9 @@ body{
 
 .navigalion-link{
     color: var(--primary-text-color);
+    font-weight: 500;
     text-decoration: none;
+   
 }
 .navigalion-link:hover, .navigalion-link:focus{
     color:var(--accent-color);
@@ -145,12 +146,17 @@ body{
 .contact-link{
     color:var(--secondary-text-color);
     text-decoration: none;
+    font-weight: 500;
 }
 .contact-link:hover, .contact-link:focus{
     color: var(--accent-color);
     text-decoration: none;
 }
 
+.main-studio{
+       width: 1600px;
+       margin: auto;
+}
 
 /* ==================Headder==================== */
 
@@ -158,22 +164,34 @@ header{
     padding: 24px 215px;
     display:flex;
     flex-direction: row;
-    border-bottom: 1px solid #ECECEC;
     box-sizing: border-box;
     height: 80px;
-    width: auto;
+    width: 1600px;
+    margin: auto;
 }
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ECECEC;
+    margin: 0 0;
+
+}
+
 .site-nav>li{
     letter-spacing: 0.02em;
        
 }
 .site-nav{
     width: 281px;
+    height: 31px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 93px;
-    padding-top: 8px;
+    align-items: center;
+    padding-left: 93px;
+    line-height: 1.14;  
 }
 .site-contacts{
     display:flex;
@@ -185,7 +203,9 @@ header{
 }
 .site-contacts>li{
     padding-top: 8px;
+    font-weight: 500;
     letter-spacing: 0.02em;
+    line-height: 1.14; 
 }
 
 
@@ -194,9 +214,14 @@ header{
 /* Section =  HERO */
 
 .hero{
+    margin: auto;
+    border: border-box;
+    padding: 200px 452px;
     background-color: var(--secondary-page-color);
-    width:1600px;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .hero-title{
     color: #FFFFFF;
@@ -205,40 +230,21 @@ header{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    padding-top: 200px;
     margin-bottom: 30px;
     
 }
-.button.primary.hero{
+.button.primary.hero-button{
     width: 216px;
     height: 50px;
-    font-weight: 700;
-    margin-left: 692px;
 }
 
 /* Section =  features */
 
 .features{
-    margin-top: 94px;
-    margin-bottom: 94px;
-    padding-left: 215px;
-    padding-right: 215px;
+    padding: 94px 215px;
 }
 .features>h2{
     display: none;
-}
-.features-item{
-    width: 270px;
-    height: 98px;
-}
-.features-item>h3{
-    font-weight: 700;
-    text-transform: uppercase;
-    
-}
-.features-item>p{
-    color: var(--secondary-text-color);
-    line-height: 1.71;
 }
 .items-positions{
     display: flex;
@@ -246,14 +252,26 @@ header{
     justify-content: space-between;
     width: 1170px;
 }
+.features-item{
+    width: 270px;
+    height: 98px;
+}
+.features-item>h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+.features-item>p{
+    color: var(--secondary-text-color);
+    line-height: 1.71;
+    margin: 0;
+}
+
 
 /* Section = What we are doing */
 
 .photo-gallery{
-
-    margin-bottom: 94px;
-    padding-left: 215px;
-    padding-right: 215px;
+    padding: 0 215px 94px 215px;
 
 }
 .gallery-items{
@@ -275,18 +293,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
-
-.team-card>h3{
-    font-size: 16px;
-    line-height: 1.18;
-    margin-top: 30px;
-}
-.team-card>p{
-    font-size: 16px;
-    line-height: 1.18;
-    color: var(--secondary-text-color);
-    margin-top: 10px;
-}
 .team-card{
     text-align: center;
     width: 270px;
@@ -299,22 +305,39 @@ header{
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+.team-card-titles{
+    padding: 30px 0;
+}
+.team-card h3{
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+}
+.team-card p{
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+   
+}
 
 
 
 /* ==================Portfolio Page==================== */
 
 .main-portfolio{
+    border: border-box;
+    margin: auto;
+    width: 1170px;
     padding: 94px 215px;
+}
+.main-portfolio>h1{
+    display:none;
 }
 .porfolio-buttons-row{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 296px 0 297px ;
-}
-.button.secondary.ignore{
-    width: 132px;
 }
 
 .portfolio-cards{
@@ -329,20 +352,22 @@ header{
     width: 370px;
     height: 404px;
     margin-bottom: 30px;
+    text-decoration: none;
 }
-.portfolio-card-item>h3{
+.portfolio-card-item h2{
     padding: 20px 20px 0 24px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
-
 }
-.portfolio-card-item>p{
+.portfolio-card-item a{
+    text-decoration: none;
+    color: inherit;
+}
+.portfolio-card-item  p{
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color);
     padding: 4px 0 0 24px;
-    margin: 0;
 
 }
 
@@ -354,15 +379,19 @@ footer{
     padding: 60px 215px;
     box-sizing: border-box;
     height: 252px;
-    width: auto;
+    width: 1600px;
+    margin: auto;
+}
+.left-side-footer-elements{
+    border: border-box;
+    width: 231px;
+    height: 132px;
+}
+.footer-logo{
+    margin-bottom: 50px;
 }
 .addresses{
-    margin-top: 20px;
     font-style: inherit;
-}
-.addresses>ul{
-    width: 231px;
-    height: 81px;
 }
 .address-item{
     margin-bottom: 9px;
