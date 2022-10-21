@@ -53,6 +53,19 @@ body{
     margin-bottom: 50px;
 }
 
+.visually-hidden {
+ position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ==================button styles==================== */
 
 .button.primary{
@@ -243,9 +256,7 @@ hr {
 .features{
     padding: 94px 215px;
 }
-.features>h2{
-    display: none;
-}
+
 .items-positions{
     display: flex;
     flex-direction: row;
@@ -355,9 +366,9 @@ hr {
     text-decoration: none;
 }
 .portfolio-card-item h2{
-    padding: 20px 20px 0 24px;
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
 }
 .portfolio-card-item a{
     text-decoration: none;
@@ -367,10 +378,10 @@ hr {
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color);
-    padding: 4px 0 0 24px;
-
 }
-
+.portfolio-item-titles-cont{
+    padding: 20px 24px;
+}
 
 /* ==================FOOTER==================== */
 footer{
@@ -382,20 +393,18 @@ footer{
     width: 1600px;
     margin: auto;
 }
-.left-side-footer-elements{
-    border: border-box;
-    width: 231px;
-    height: 132px;
-}
+
 .footer-logo{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
-.addresses{
-    font-style: inherit;
+.addresses{font-style: inherit;}
+.addresses>ul{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 81px;
 }
-.address-item{
-    margin-bottom: 9px;
-}
+
 .address-link{
     color: var(--pure-whie-logo-color);
     line-height: 1.71;
@@ -411,4 +420,8 @@ footer{
     text-decoration: none;
     color: var(--footer-link-color);
 }
-
+.left-side-footer-elements{
+    border: border-box;
+    width: 231px;
+    height: 132px;
+}
