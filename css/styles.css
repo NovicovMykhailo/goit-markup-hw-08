@@ -84,7 +84,6 @@ body{
     color: var(--pure-whie-logo-color);
     border: none;
     min-width: 216px;
-    text-align: center;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -94,9 +93,9 @@ body{
     letter-spacing: 0.06em;
     font-size: 16px;
     line-height: 1.85;
+    text-align: center;
+
     padding: 10px 32px;
-    
- 
 }
 .button-primary:hover,.button-primary:focus{
     background-color: var(--section-color);
@@ -107,14 +106,16 @@ body{
     background-color: var(--section-color);
     color: var(--primary-text-color);
     border: none;
-    cursor: pointer;
     text-align: center;
-    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+
     font-family: inherit; 
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
-    border-radius: 4px;
+
     padding: 6px 22px ;
 
 }
@@ -144,6 +145,7 @@ body{
 }
 
 /* navigation and contact menu styles  */
+
 .link{
     font-weight: 500;
     text-decoration: none;
@@ -159,6 +161,9 @@ body{
     color:var(--secondary-text-color);
 }
 .contact:hover, .contact:focus{
+    color: var(--accent-color);
+}
+.active-page{
     color: var(--accent-color);
 }
 
@@ -367,6 +372,9 @@ footer{
     background-color: var(--secondary-page-color);
     padding-top: 60px;
     padding-bottom: 60px;   
+}
+.footer-addresses-container{
+    width: 231px ;
 }
 .footer-logo{
     display: block;
