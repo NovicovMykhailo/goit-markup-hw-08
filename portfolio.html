@@ -16,19 +16,19 @@
 <body>
     <!--Шапка сайту-->
 	<header>
-        <div class="container">
+        <div class="container main-flex">
             <a href="./index.html" class="logo">Web<span class="head-logo-color">Studio</span></a>
             <nav>
                 <ul class="site-nav">
-                    <li><a href="./index.html" class="link navigalion">Студія</a></li>
-                    <li><a href="./portfolio.html" class="link navigalion">Портфоліо</a></li>
-                    <li><a href="" class="link navigalion">Контакти</a></li>
+                    <li class="menu"><a href="./index.html" class="link navigalion head">Студія</a></li>
+                    <li class="menu"><a href="./portfolio.html" class="link navigalion head">Портфоліо</a></li>
+                    <li class="menu"><a href="" class="link navigalion head">Контакти</a></li>
                 </ul>
             </nav>
 
             <ul class="site-contacts">
-                <li><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
+                <li class="menu"><a href="mailto:info@devstudio.com" class="link contact head">info@devstudio.com</a></li>
+                <li class="menu"><a href="tel:+380961111111" class="link contact head">+38 096 111 11 11</a></li>
             </ul>
         </div>
 	</header>
@@ -36,13 +36,12 @@
     <main class="main-portfolio">
         <div class="container">
             <h1 class="visually-hidden">Приклади Наших Робіт</h1>
-    
             <ul class="porfolio-buttons-row">
-                <li><button type="button" class="button-secondary">Усі</button></li>
-                <li><button type="button" class="button-secondary">Веб-сайти</button></li>
-                <li><button type="button" class="button-secondary">Додатки</button></li>
-                <li><button type="button" class="button-secondary">Дизайн</button></li>
-                <li><button type="button" class="button-secondary">Маркетинг</button></li>
+                <li class="filter-btn"><button type="button" class="button-secondary">Усі</button></li>
+                <li class="filter-btn"><button type="button" class="button-secondary">Веб-сайти</button></li>
+                <li class="filter-btn"><button type="button" class="button-secondary">Додатки</button></li>
+                <li class="filter-btn"><button type="button" class="button-secondary">Дизайн</button></li>
+                <li class="filter-btn"><button type="button" class="button-secondary">Маркетинг</button></li>
             </ul>
 
             <ul class="portfolio-cards">
@@ -53,6 +52,7 @@
                             <h2>Технокряк</h2>
                             <p>Веб-сайт</p>
                         </div>
+                        
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -62,6 +62,7 @@
                             <h2>Постер New Orlean vs Golden Star</h2>
                             <p>Дизайн</p>
                         </div>
+                        
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -71,6 +72,7 @@
                             <h2>Ресторан Seafood</h2>
                             <p>Додаток</p>
                         </div>
+                        
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -80,6 +82,7 @@
                             <h2>Проєкт Prime</h2>
                             <p>Маркетинг</p>
                         </div>
+                       
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -88,7 +91,8 @@
                         <div class="portfolio-item-titles-cont">
                             <h2>Проєкт Boxes</h2>
                             <p>Додаток</p>
-                        </div>    
+                        </div>
+                           
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -98,6 +102,7 @@
                             <h2>Inspiration has no Borders</h2>
                             <p>Веб-сайт</p>
                         </div>
+                        
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -107,6 +112,7 @@
                             <h2>Видання Limited Edition</h2>
                             <p>Дизайн</p>
                         </div>
+                      
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -116,6 +122,7 @@
                             <h2>Проєкт LAB</h2>
                             <p>Маркетинг</p>
                         </div>
+                        
                     </a>
                 </li>
                 <li class="portfolio-card-item">
@@ -123,8 +130,9 @@
                         <img src="./images/growing-business.jpg" width="370" height="294" alt="">
                         <div class="portfolio-item-titles-cont">
                             <h2>Growing Business</h2>
-                            <p>Додаток</p>  
-                        </div>  
+                            <p>Додаток</p> 
+                        </div>
+                         
                     </a>
                 </li>
             </ul>
@@ -136,24 +144,18 @@
     <footer>
         <div class="container">
             <!-- Address -->
-            <div class="left-side-footer-elements">
-                <div class="footer-logo">
-                    <a href="./index.html" class="logo">Web<span class="footer-logo-color">Studio</span></a>
-                </div>
-                <address>
+                <a href="./index.html" class="logo footer-logo">Web<span class="footer-logo-color">Studio</span></a>
+                <address >
                     <ul >
                         <li>
                             <a href="https://goo.gl/maps/h6QmiXgU1CcLpfcq8" class="address-item location" target="_blank" rel="noopener noreferrer nofolow" >
-                                м. Київ, пр-т Лесі Українки, 26
-                            </a>
+                                м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
                         <li><a href="mailto:info@devstudio.com" class="address-item mail" >info@devstudio.com</a></li>
                         <li><a href="tel:+380961111111" class="address-item tel">+38 096 111 11 11</a></li>
                     </ul>
-                
                 </address>
-            </div>
         </div>
-	</footer>
+    </footer>
 </body>
 </html>

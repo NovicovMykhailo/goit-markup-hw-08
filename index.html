@@ -15,28 +15,30 @@
 	<body>
 		<!--Шапка сайту-->
 	<header>
-        <div class="container">
+        <div class="container main-flex">
             <a href="./index.html" class="logo">Web<span class="head-logo-color">Studio</span></a>
             <nav>
                 <ul class="site-nav">
-                    <li><a href="./index.html" class="link navigalion">Студія</a></li>
-                    <li><a href="./portfolio.html" class="link navigalion">Портфоліо</a></li>
-                    <li><a href="" class="link navigalion">Контакти</a></li>
+                    <li class="menu"><a href="./index.html" class="link navigalion head">Студія</a></li>
+                    <li class="menu"><a href="./portfolio.html" class="link navigalion head">Портфоліо</a></li>
+                    <li class="menu"><a href="" class="link navigalion head">Контакти</a></li>
                 </ul>
             </nav>
 
             <ul class="site-contacts">
-                <li><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a></li>
+                <li class="menu"><a href="mailto:info@devstudio.com" class="link contact head">info@devstudio.com</a></li>
+                <li class="menu"><a href="tel:+380961111111" class="link contact head">+38 096 111 11 11</a></li>
             </ul>
         </div>
-	</header></header>
+	</header>
 		<!--Головна інформація-->
-		<main class="main-studio">
+		<main>
 			<!--Герой-->
-			<section class="hero">
-				<h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
-				<button type="button" class="button-primary">Замовити послугу</button>
+			<section class="hero-section">
+				<div class="container">
+					<h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
+					<button type="button" class="button-primary hero">Замовити послугу</button>
+				</div>
 			</section>
 			<!--Особливості-->
 			<section class="features" >
@@ -67,10 +69,10 @@
 			<section class="photo-gallery">
 				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
-					<ul class="gallery-items">
-						<li><img src="./images/box1.jpg" width="370" alt="Picture of working man on tablet" /></li>
-						<li><img src="./images/box2.jpg" width="370" alt="Picture of working man on cellphone" /></li>
-						<li><img src="./images/box3.jpg" width="370" alt="Picture of working man on tablet " /></li>
+					<ul class="gallery">
+						<li class="items"><img src="./images/box1.jpg" width="370" alt="Picture of working man on tablet" /></li>
+						<li class="items"><img src="./images/box2.jpg" width="370" alt="Picture of working man on cellphone" /></li>
+						<li class="items"><img src="./images/box3.jpg" width="370" alt="Picture of working man on tablet " /></li>
 					</ul>
 				</div>	
 			</section>
@@ -81,33 +83,24 @@
 					<ul class="team-cards">
 						<li class="team-card">
 							<img src="./images/img1.jpg" width="270" alt="Photo of project designer" />
-							<div class="team-card-titles">
-								<h3>Ігор Дем'яненко</h3>
+								<h3 class="team-card-title">Ігор Дем'яненко</h3>
 								<p>Product Designer</p>
-							</div>
 
 						</li>
 						<li class="team-card">
 							<img src="./images/img2.jpg" width="270" alt="Photo of Frontend Developer" />
-							<div class="team-card-titles">
-								<h3>Ольга Рєпіна</h3>
+								<h3 class="team-card-title">Ольга Рєпіна</h3>
 								<p>Frontend Developer</p>
-							</div>
 						</li>
 						<li class="team-card">
 							<img src="./images/img3.jpg" width="270" alt="Photo of Marketing Specialist" />
-							<div class="team-card-titles">
-								<h3>Микола Тарасов</h3>
+								<h3 class="team-card-title">Микола Тарасов</h3>
 								<p>Marketing</p>
-							</div>
 						</li>
 						<li class="team-card">
 							<img src="./images/img4.jpg" width="270" alt="Photo of UI Designer" />
-							<div class="team-card-titles">
-								<h3>Михайло Єрмаков</h3>
+								<h3 class="team-card-title">Михайло Єрмаков</h3>
 								<p>UI Designer</p>
-							</div>
-							
 						</li>
 					</ul>
 				</div>
@@ -117,9 +110,7 @@
 		<footer>
 			<div class="container">
 				<!-- Address -->
-					<div class="footer-logo">
-						<a href="./index.html" class="logo">Web<span class="footer-logo-color">Studio</span></a>
-					</div>
+					<a href="./index.html" class="logo footer-logo">Web<span class="footer-logo-color">Studio</span></a>
 					<address >
 						<ul >
 							<li>
