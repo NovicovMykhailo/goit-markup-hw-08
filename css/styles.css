@@ -266,9 +266,6 @@ header{
 .team{
     background-color: var(--section-color);
 }
-.team .section-title{
-    margin-top: calc( 121px - 94px );
-}
 .team-cards{
     display:flex;
     /* justify-content below used for case when container width will change */
@@ -391,16 +388,14 @@ footer{
     display: block;
     margin-bottom: 20px;
 }
-
+.address-list{
+    margin-bottom: 9px;
+}
 address, .address-item{
     font-style: inherit;
     text-decoration: inherit;
     line-height: 1.71;
     color: var(--footer-link-color);  
-}
-.address-item{
-    display: block;
-    margin-bottom: 9px;
 }
 .location{
     color: var(--pure-whie-logo-color);
