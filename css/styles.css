@@ -77,6 +77,10 @@ body{
     margin: -1px;
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* ==================button styles==================== */
 
 .button-primary{
@@ -204,7 +208,6 @@ header{
     background-color: var(--secondary-page-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
     text-align: center;
 }
 .hero-title{
@@ -218,12 +221,13 @@ header{
 }
 
 /* Section =  features */
+
 .items-positions{
-    display: flex;   
+    display: flex;
+    /* justify-content below used for case when container width will change */
+    justify-content: center;
+   
 }
-.features{
-    margin-bottom: 94px;
-} 
 
 .features-item{
     width: 270px;
@@ -243,11 +247,12 @@ header{
 
 
 /* Section = What we are doing */
-.photo-gallery{
-    margin-bottom: 94px;
-}
+
 .gallery{
+    padding-top: 0px;
     display:flex;
+    /* justify-content below used for case when container width will change */
+    justify-content: center;
 }
 .gallery .items{
     margin-right: 30px;
@@ -260,12 +265,14 @@ header{
 
 .team{
     background-color: var(--section-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+}
+.team .section-title{
+    margin-top: calc( 121px - 94px );
 }
 .team-cards{
-    display:flex; 
+    display:flex;
+    /* justify-content below used for case when container width will change */
+    justify-content: center;  
 }
 .team-card img{
     display: block;
@@ -306,7 +313,6 @@ header{
 .porfolio-buttons-row{
     display: flex;
     justify-content: center; 
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .porfolio-buttons-row .filter-btn + .filter-btn{
@@ -316,12 +322,10 @@ header{
 .portfolio-cards{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;    
 }
 
 .portfolio-card-item{
     width: calc( (100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -351,14 +355,15 @@ header{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 20px;
 }
 .portfolio-item-titles-cont{
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    /* width and auto-margins below made for case further change container width */
     width: 370px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 24px;
  }
  .portfolio-item-titles-cont > h2{
     font-size: 18px;
@@ -370,7 +375,6 @@ header{
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.87;
-    margin-bottom: 20px;
 }
 
 
