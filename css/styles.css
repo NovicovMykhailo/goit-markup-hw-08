@@ -391,6 +391,9 @@ footer{
 .address-list{
     margin-bottom: 9px;
 }
+.address-list:last-child{
+    margin-bottom: 0;
+}
 address, .address-item{
     font-style: inherit;
     text-decoration: inherit;
