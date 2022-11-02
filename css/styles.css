@@ -209,6 +209,11 @@ header{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(47, 48, 58, 0.4));
 }
 .hero-title{
     color: #FFFFFF;
@@ -235,6 +240,29 @@ header{
 }
 .features-item:last-child{
     margin-right: 0;
+}
+
+.fetures-bg{
+    background-color: var(--section-color);
+    height: 120px;
+    border: none;
+    margin-bottom: 30px;
+}
+.icon{
+    background-repeat:  no-repeat;
+    background-position: 50%;
+}
+.dish{
+    background-image:url(../images/antenna.svg) ;
+}
+.clock{
+    background-image:url(../images/clock.svg) ;
+}
+.vector{
+    background-image:url(../images/Vector.svg) ;
+}
+.astronaut{
+    background-image:url(../images/astronaut.svg) ;
 }
 .features-item>h3{
     text-transform: uppercase;
