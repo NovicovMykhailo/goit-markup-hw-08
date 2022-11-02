@@ -195,6 +195,7 @@ header{
 .site-contacts .menu + .menu{
     margin-left: 50px;
 }
+
 .head{
     display: block;
     padding-top: 32px;
@@ -316,21 +317,50 @@ header{
 .team-card:last-child{
     margin-right: 0;
 }
-.team-card-title{
-    margin-top: 30px    
+
+.member-card-description{
+    padding: 30px;
 }
-.team-card h3{
+.member-card-description h3{
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 10px;    
 }
-.team-card p{
-    margin-bottom: 30px;
+.member-card-description p{
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-text-color);  
 }
 
+.link-cards{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.team-member-link{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: tomato
+    ;
+}
+/* ==================Clients list==================== */
+.clients-list{
+    display: flex;
+    gap: 30px;
+    flex-basis: 170px;
+    justify-content: center;
+}
+.client-item{
+    width: 170px;
+    height: 92px;
+    display: block;
+    background-color: tomato;
+    
+}
 
 
 /* ==================Portfolio Page==================== */
@@ -409,6 +439,10 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;   
 }
+.flex-cnt{
+    display:flex;
+    gap: 70px;
+}
 .footer-addresses-container{
     width: 231px ;
 }
@@ -436,4 +470,54 @@ address, .address-item{
 .tel:hover, .tel:focus,
 .location:hover, .location:focus{
      color: var(--accent-color);
+}
+.footer-links{
+    padding-top: 12px;
+
+}
+.links-dscr{
+    text-transform: uppercase;
+    color: var(--primary-page-color);
+    font-weight: 700;
+    font-size: 1.14;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;;
+}
+.footer-lnks-list{
+    display: flex;
+    gap:10px;
+}
+.link-footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.link-footer:hover, .link-footer:focus{
+    background-color: var(--accent-color);
+}
+.ft-instagram{
+    background-image: url(../images/inst-logo-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.ft-twitter{
+    background-image: url(../images/twitter-logo-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.ft-facebook{
+    background-image: url(../images/facebook-logo-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.ft-linkedin{
+    background-image: url(../images/linkedin-logo-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
 }
