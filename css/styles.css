@@ -157,6 +157,7 @@ body {
 	font-weight: 500;
 	text-decoration: none;
 	letter-spacing: 0.02em;
+	/* text-align: left; */
 }
 .navigalion {
 	color: var(--primary-text-color);
@@ -199,42 +200,27 @@ header {
 .site-contacts .menu + .menu {
 	margin-left: 50px;
 }
-/* .menu{
-    display: inline-flex;
-    gap: 10px;
-    align-items: center;
-} */
-.mail-icon {
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-
-    fill: tomato
-}
-.mail-icon:hover{
-    fill: teal;
-}
-
-.tel-icon {
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-    fill: tomato;
-}
-.tel-icon:hover{
-    fill: teal;
-}
 .head {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+.address-icons{
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	fill: currentColor
+}
+.address-icons:hover, .address-icons:focus{
+	fill: var(--accent-color)
 }
 /* ==================SECTIONS==================== */
 
 /* Section =  HERO */
 
 .hero-section {
-	background-color: var(--secondary-page-color);
+	/* background-color: var(--secondary-page-color); */
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
@@ -242,7 +228,9 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background: linear-gradient(rgba(47, 48, 58, 0.4));
+	/* background: rgba(47, 48, 58, 0.4); */
+
+	
 }
 .hero-title {
 	color: #ffffff;
@@ -258,17 +246,11 @@ header {
 
 .items-positions {
 	display: flex;
-	/* justify-content below used for case when container width will change */
-	justify-content: center;
+	flex-basis: 270px;
+	gap: 30px;
+
 }
 
-.features-item {
-	width: 270px;
-	margin-right: 30px;
-}
-.features-item:last-child {
-	margin-right: 0;
-}
 
 .fetures-bg {
 	background-color: var(--section-color);
@@ -297,14 +279,7 @@ header {
 .gallery {
 	padding-top: 0px;
 	display: flex;
-	/* justify-content below used for case when container width will change */
-	justify-content: center;
-}
-.gallery .items {
-	margin-right: 30px;
-}
-.gallery .items:last-child {
-	margin-right: 0;
+	gap: 30px;
 }
 
 /* Section =  TEAM */
@@ -314,22 +289,19 @@ header {
 }
 .team-cards {
 	display: flex;
-	/* justify-content below used for case when container width will change */
-	justify-content: center;
+	gap: 30px;
+	flex-basis: 270px;
+
 }
 .team-card img {
 	display: block;
 }
 
 .team-card {
-	margin-right: 30px;
 	text-align: center;
 	background-color: var(--primary-page-color);
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-card:last-child {
-	margin-right: 0;
 }
 
 .member-card-description {
@@ -354,17 +326,27 @@ header {
 	gap: 10px;
 }
 .team-member-link {
-	display: block;
+	display: inline-flex;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 	background-color: transparent;
+	align-content: center;
+	justify-content: center;
+}
+.card-icons{
+	width: 44px;
+	height: 44px;
+	padding: 10px;
+	fill: var(--secondary-text-color)
 }
 .team-member-link:hover,
 .team-member-link:focus {
 	background-color: var(--accent-color);
 }
-
+.card-icons:hover, .card-icons:focus{
+	fill: var(--pure-whie-logo-color)
+}
 /* ==================Clients list==================== */
 .clients-list {
 	display: flex;
@@ -375,16 +357,28 @@ header {
 .client-item {
 	width: 170px;
 	height: 92px;
-	display: block;
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	background-color: transparent;
 }
+.client-icons{
+	width: 170px;
+	height: 92px;
+	padding: 16px 0;
+	/* padding: 32px 16px; */
+	fill: #afb1b8;
+}
+
 .client-item:hover,
 .client-item:focus {
 	border: 1px solid var(--accent-color);
 }
-
+.client-icons:hover, .client-icons:focus{
+	fill: var(--accent-color);
+}
 /* ==================Portfolio Page==================== */
 
 .porfolio-buttons-row {
@@ -510,16 +504,19 @@ address,
 	gap: 10px;
 }
 .link-footer {
+	display: inline-flex;
+	align-content: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
-    padding: 12px;
+    /* padding: 12px; */
 }
 .ft-icon{
     fill: var(--pure-whie-logo-color);
-    width: 20px;
-    height: 20px;
+    width: 44px;
+    height: 44px;
+	padding: 10px;
 }
 .link-footer:hover,
 .link-footer:focus {
