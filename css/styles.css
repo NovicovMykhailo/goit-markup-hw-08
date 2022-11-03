@@ -229,6 +229,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	max-width: 1600px;
 	
 }
 .hero-title {
@@ -375,7 +376,8 @@ header {
 .client-item:focus {
 	border: 1px solid var(--accent-color);
 }
-.client-icons:hover, .client-icons:focus{
+.client-icons:hover, 
+.client-icons:focus{
 	fill: var(--accent-color);
 }
 /* ==================Portfolio Page==================== */
@@ -383,12 +385,9 @@ header {
 .porfolio-buttons-row {
 	display: flex;
 	justify-content: center;
+	gap: 8px;
 	margin-bottom: 50px;
 }
-.porfolio-buttons-row .filter-btn + .filter-btn {
-	margin-left: 8px;
-}
-
 .portfolio-cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -396,9 +395,12 @@ header {
 	flex-basis: 370px ;
 }
 
-.portfolio-card-item:hover,
-.portfolio-card-item:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-card-item:hover, 
+.portfolio-card-item:focus{
+	box-shadow: 
+		0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06), 
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-item > a {
@@ -415,8 +417,6 @@ header {
 .portfolio-item-titles-cont {
 	border: 1px solid #eeeeee;
 	border-top: transparent;
-	/* width and auto-margins below made for case further change container width */
-	/* width: 370px; */
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px 24px;
