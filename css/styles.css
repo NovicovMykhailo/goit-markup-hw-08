@@ -220,16 +220,15 @@ header {
 /* Section =  HERO */
 
 .hero-section {
-	/* background-color: var(--secondary-page-color); */
+	background-color: var(--secondary-page-color);
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	background-image: url(../images/hero-bg.jpg);
+	background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	url(../images/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	/* background: rgba(47, 48, 58, 0.4); */
-
 	
 }
 .hero-title {
@@ -393,19 +392,8 @@ header {
 .portfolio-cards {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.portfolio-card-item {
-	width: calc((100% - 60px) / 3);
-	margin-right: 30px;
-	margin-bottom: 30px;
-}
-
-.portfolio-card-item:nth-child(3n) {
-	margin-right: 0;
-}
-.portfolio-card-item:nth-last-child(-n + 3) {
-	margin-bottom: 0;
+	gap: 30px;
+	flex-basis: 370px ;
 }
 
 .portfolio-card-item:hover,
@@ -428,7 +416,7 @@ header {
 	border: 1px solid #eeeeee;
 	border-top: transparent;
 	/* width and auto-margins below made for case further change container width */
-	width: 370px;
+	/* width: 370px; */
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px 24px;
