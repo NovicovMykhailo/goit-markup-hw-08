@@ -254,12 +254,15 @@ header {
 }
 
 
-.fetures-bg {
+.features-bg {
+	display: flex;
 	background-color: var(--section-color);
 	height: 120px;
 	border: none;
 	margin-bottom: 30px;
-    padding: 25px 100px;
+	align-items: center;
+	justify-content: center;
+ 
 }
 
 
