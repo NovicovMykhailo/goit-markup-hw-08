@@ -24,6 +24,8 @@
 	--pure-black-logo-color: #000000;
 	--pure-whie-logo-color: #ffffff;
 	--footer-link-color: rgba(255, 255, 255, 0.6);
+
+	--icons-color: #afb1b8;
 }
 
 /* ==================UTILITES==================== */
@@ -208,7 +210,7 @@ header {
 }
 .address-icons{
 	margin-right: 10px;
-	fill: currentColor
+	fill: currentColor;
 }
 .address-icons:hover, .address-icons:focus{
 	fill: var(--accent-color)
@@ -228,6 +230,8 @@ header {
 	background-position: center;
 	background-size: cover;
 	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 	
 }
 .hero-title {
@@ -319,25 +323,20 @@ header {
 	flex-wrap: wrap;
 	gap: 10px;
 }
-.team-member-link {
-	display: inline-flex;
+.card-icons{
+	display: flex;
+	background-color: transparent;
+	align-items: center;
+	justify-content: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	background-color: transparent;
-	align-content: center;
-	justify-content: center;
-}
-.card-icons{
-	padding: 12px;
-	fill: var(--secondary-text-color)
-}
-.team-member-link:hover,
-.team-member-link:focus {
-	background-color: var(--accent-color);
+	fill: var(--icons-color);
+
 }
 .card-icons:hover, .card-icons:focus{
-	fill: var(--pure-whie-logo-color)
+	fill: var(--pure-whie-logo-color);
+	background-color: var(--accent-color);
 }
 /* ==================Clients list==================== */
 .clients-list {
@@ -346,28 +345,23 @@ header {
 	flex-basis: 170px;
 	justify-content: center;
 }
-.client-item {
+
+.client-icons{
 	width: 170px;
 	height: 92px;
 	display: inline-flex;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
-	border: 1px solid #afb1b8;
+	border: 1px solid var(--icons-color);
 	border-radius: 4px;
 	background-color: transparent;
-}
-.client-icons{
-	padding: 16px 0;
-	fill: #afb1b8;
+	fill: var(--icons-color);
 }
 
-.client-item:hover,
-.client-item:focus {
-	border: 1px solid var(--accent-color);
-}
 .client-icons:hover, 
 .client-icons:focus{
 	fill: var(--accent-color);
+	border: 1px solid var(--accent-color);
 }
 /* ==================Portfolio Page==================== */
 
@@ -384,8 +378,8 @@ header {
 	flex-basis: 370px ;
 }
 
-.portfolio-card-item:hover, 
-.portfolio-card-item:focus{
+.card-shadow:hover, 
+.card-shadow:focus{
 	box-shadow: 
 		0px 1px 1px rgba(0, 0, 0, 0.12),
 		0px 4px 4px rgba(0, 0, 0, 0.06), 
@@ -480,21 +474,19 @@ address,
 	display: flex;
 	gap: 10px;
 }
-.link-footer {
-	display: inline-flex;
-	align-content: center;
+
+.ft-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
-    /* padding: 12px; */
-}
-.ft-icon{
     fill: var(--pure-whie-logo-color);
-	padding: 12px;
 }
-.link-footer:hover,
-.link-footer:focus {
+.ft-icon:hover,
+.ft-icon:focus {
 	background-color: var(--accent-color);
 }
 
