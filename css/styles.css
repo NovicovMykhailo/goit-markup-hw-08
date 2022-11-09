@@ -555,10 +555,10 @@ address,
 @keyframes slide{
 	from{
 		margin-top: 100%;
-		transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+	
 	}
 	to{
 		margin-top: 0;
-		transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);s
+	
 	}
 }
