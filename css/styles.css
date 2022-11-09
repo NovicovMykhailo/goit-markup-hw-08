@@ -178,7 +178,7 @@ body {
 	color: var(--accent-color);
 }
 
-.active-page::before {
+.active-page::after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -413,18 +413,22 @@ header {
 	gap: 30px;
 	flex-basis: 370px;
 }
-/* 
-.viewbox{
+.card-overlay{
 	position: relative;
-} */
-.card-shadow{
-	position: relative;
+	overflow: hidden;
+
 }
-.card-shadow:hover,
+.card-shadow:hover ,
 .card-shadow:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.card-shadow:hover .card-descr ,
+.card-shadow:focus .card-descr{
+	opacity: 0.9;
+	animation: slide;
+	animation-duration: 250ms;
+	
+}
 .card-descr{
 	position: absolute;
 	top: 0;
@@ -436,12 +440,10 @@ header {
 	font-size: 18px;
 	line-height: 1.55;
 	color: var(--pure-whie-logo-color);
-	background-color: teal;
+
+	background-color: var(--accent-color);
 	padding: 63px 24px;
-	opacity: 0.5;
-
-
-	outline: 2px dashed red;
+	opacity: 0;
 }
 
 .portfolio-card-item > a {
@@ -547,4 +549,16 @@ address,
 .ft-icon:hover,
 .ft-icon:focus {
 	background-color: var(--accent-color);
+}
+
+
+@keyframes slide{
+	from{
+		margin-top: 100%;
+		transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	to{
+		margin-top: 0;
+		transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);s
+	}
 }
