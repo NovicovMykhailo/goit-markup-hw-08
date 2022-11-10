@@ -107,12 +107,15 @@ body {
 	text-align: center;
 
 	padding: 10px 32px;
+
+	transition-property: color, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-primary:hover,
 .button-primary:focus {
 	background-color: var(--section-color);
 	color: var(--accent-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button-secondary {
 	background-color: var(--section-color);
@@ -129,6 +132,10 @@ body {
 	text-align: center;
 
 	padding: 6px 22px;
+
+	transition-property: color, background-color, box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -162,6 +169,10 @@ body {
 }
 .navigalion {
 	color: var(--primary-text-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigalion:hover,
 .navigalion:focus {
@@ -169,6 +180,10 @@ body {
 }
 .contact {
 	color: var(--secondary-text-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus {
@@ -190,6 +205,7 @@ body {
 	background-color: var(--accent-color);
 	border-radius: 2px;
 }
+
 /* ==================Headder==================== */
 
 header {
@@ -285,7 +301,7 @@ header {
 }
 
 /* Section = What we are doing */
-.items{
+.items {
 	position: relative;
 }
 .gallery {
@@ -293,12 +309,12 @@ header {
 	display: flex;
 	gap: 30px;
 }
-.gallery-photo{
+.gallery-photo {
 	display: block;
 }
-.gallery-description{
+.gallery-description {
 	position: absolute;
-	bottom:0;  
+	bottom: 0;
 	left: 0;
 	width: 100%;
 
@@ -307,14 +323,11 @@ header {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
-
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	height: 70px;
 	background-color: rgba(47, 48, 58, 0.8);
-	
-
 }
 
 /* Section =  TEAM */
@@ -368,6 +381,10 @@ header {
 	height: 44px;
 	border-radius: 50%;
 	fill: var(--icons-color);
+
+	transition-property: fill, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-icons:hover,
 .card-icons:focus {
@@ -392,6 +409,10 @@ header {
 	border-radius: 4px;
 	background-color: transparent;
 	fill: var(--icons-color);
+
+	transition-property: fill, border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icons:hover,
@@ -413,32 +434,24 @@ header {
 	gap: 30px;
 	flex-basis: 370px;
 }
-.card-overlay{
+.card-overlay {
 	position: relative;
 	overflow: hidden;
-
 }
-.card-shadow{
-	box-shadow: none;
+.card-shadow {
 	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-.card-shadow:hover ,
+.card-shadow:hover,
 .card-shadow:focus {
-	box-shadow: 
-			0px 1px 1px rgba(0, 0, 0, 0.12), 
-			0px 4px 4px rgba(0, 0, 0, 0.06), 
-			1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-shadow:hover .card-descr ,
-.card-shadow:focus .card-descr{
-	transform: translateY(0)
-
-	
+.card-shadow:hover .card-descr,
+.card-shadow:focus .card-descr {
+	transform: translateY(0);
 }
-.card-descr{
+.card-descr {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -477,7 +490,6 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px 24px;
-	
 }
 .portfolio-item-titles-cont > h2 {
 	font-size: 18px;
@@ -520,9 +532,16 @@ address,
 	text-decoration: inherit;
 	line-height: 1.71;
 	color: var(--footer-link-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .location {
 	color: var(--pure-whie-logo-color);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -559,8 +578,33 @@ address,
 	width: 44px;
 	height: 44px;
 	fill: var(--pure-whie-logo-color);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ft-icon:hover,
 .ft-icon:focus {
 	background-color: var(--accent-color);
+}
+
+/* ==================MODAL==================== */
+.backdrop{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.modal{
+	background-color: var(--pure-whie-logo-color);
+	width: 528px;
+	height: 581px;
+	border-radius: 4px;
+
 }
