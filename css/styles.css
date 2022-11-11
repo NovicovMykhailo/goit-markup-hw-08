@@ -89,7 +89,7 @@ body {
 	padding-bottom: 94px;
 }
 .is-hidden{
-	/* visibility: hidden; */
+	visibility: hidden;
 	pointer-events: none;
 	opacity: 0;
 }
