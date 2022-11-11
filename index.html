@@ -61,7 +61,7 @@
 						<br />
 						вашого бізнесу
 					</h1>
-					<button type="button" class="button-primary hero">Замовити послугу</button>
+					<button type="button" class="button-primary hero" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
 			<!--Особливості-->
@@ -343,10 +343,16 @@
 			</div>
 		</footer>
 
-		<div class="backdrop is-hidden">
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button type="button">X</button>
+				<button class="close-btn" type="button" data-modal-close>
+					<svg class="close-btn-icon" width="11" height="11" alt="close-button">
+						<use href='./images/symbol-defs.svg#close'></use>
+					</svg> 
+				</button>
 			</div>
 		</div>
+
+	<script src="./js/modal.js"></script>
 	</body>
 </html>
