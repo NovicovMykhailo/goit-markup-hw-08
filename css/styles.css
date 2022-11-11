@@ -88,7 +88,7 @@ body {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.is-hidden{
+.is-hidden {
 	visibility: hidden;
 	pointer-events: none;
 	opacity: 0;
@@ -113,9 +113,11 @@ body {
 
 	padding: 10px 32px;
 
-	transition-property: color, background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -138,15 +140,20 @@ body {
 
 	padding: 6px 22px;
 
-	transition-property: color, background-color, box-shadow;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .button-secondary:hover,
 .button-secondary:focus {
 	background-color: var(--accent-color);
 	color: var(--pure-whie-logo-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 
+		0px 3px 1px rgba(0, 0, 0, 0.1), 
+		0px 1px 2px rgba(0, 0, 0, 0.08), 
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ==================LOGO==================== */
@@ -175,9 +182,8 @@ body {
 .navigalion {
 	color: var(--primary-text-color);
 
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .navigalion:hover,
 .navigalion:focus {
@@ -186,9 +192,8 @@ body {
 .contact {
 	color: var(--secondary-text-color);
 
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .contact:hover,
 .contact:focus {
@@ -260,7 +265,10 @@ header {
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+	background-image: linear-gradient(
+		rgba(47, 48, 58, 0.4), 
+		rgba(47, 48, 58, 0.4)), 
+		url(../images/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -353,7 +361,10 @@ header {
 	text-align: center;
 	background-color: var(--primary-page-color);
 	border-radius: 0px 0px 4px 4px;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 
+		0px 1px 3px rgba(0, 0, 0, 0.12), 
+		0px 1px 1px rgba(0, 0, 0, 0.14), 
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .member-card-description {
@@ -387,9 +398,10 @@ header {
 	border-radius: 50%;
 	fill: var(--icons-color);
 
-	transition-property: fill, background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition:
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .card-icons:hover,
 .card-icons:focus {
@@ -415,15 +427,17 @@ header {
 	background-color: transparent;
 	fill: var(--icons-color);
 
-	transition-property: fill, border;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
 }
 
 .client-icons:hover,
 .client-icons:focus {
-	fill: var(--accent-color);
 	border: 1px solid var(--accent-color);
+	fill: var(--accent-color);
+	
 }
 /* ==================Portfolio Page==================== */
 
@@ -444,13 +458,14 @@ header {
 	overflow: hidden;
 }
 .card-shadow {
-	transition-property: box-shadow;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-shadow:hover,
 .card-shadow:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 
+		0px 1px 1px rgba(0, 0, 0, 0.12), 
+		0px 4px 4px rgba(0, 0, 0, 0.06), 
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-shadow:hover .card-descr,
 .card-shadow:focus .card-descr {
@@ -473,9 +488,8 @@ header {
 	opacity: 0.9;
 	transform: translateY(100%);
 
-	transition-property: transform;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-card-item > a {
@@ -538,15 +552,13 @@ address,
 	line-height: 1.71;
 	color: var(--footer-link-color);
 
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .location {
 	color: var(--pure-whie-logo-color);
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -584,9 +596,7 @@ address,
 	height: 44px;
 	fill: var(--pure-whie-logo-color);
 
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ft-icon:hover,
 .ft-icon:focus {
@@ -594,7 +604,7 @@ address,
 }
 
 /* ==================MODAL==================== */
-.backdrop{
+.backdrop {
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -606,14 +616,14 @@ address,
 	bottom: 0;
 }
 
-.modal{
+.modal {
 	position: relative;
 	background-color: var(--pure-whie-logo-color);
 	width: 528px;
 	height: 581px;
 	border-radius: 4px;
 }
-.close-btn{
+.close-btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
