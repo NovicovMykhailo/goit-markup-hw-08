@@ -338,13 +338,16 @@
 						</li>
 					</ul>
 				</div>
-				<form class="footer-form">
+				<form class="footer-form" autocomplete="off">
 					<p class="links-dscr">Підпишіться на розсилку</p>
 					<div class="footer-form-thumb">
-						<input type="email" name="E-mail" id="Email" placeholder="E-mail" class="subscribe">
-						<button type="submit" class="button-primary footer-btn">Підписатися<svg class="" width="24" height="24" alt="send-icon">
-							<use href="./images/symbol-defs.svg#icon-send"></use>
-						</svg></button>
+						<input type="email" name="E-mail" id="Email" placeholder="E-mail" class="subscribe" />
+						<button type="submit" class="button-primary footer-btn">
+							Підписатися
+							<svg class="" width="24" height="24" alt="send-icon">
+								<use href="./images/symbol-defs.svg#icon-send"></use>
+							</svg>
+						</button>
 					</div>
 				</form>
 			</div>
@@ -352,34 +355,57 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
+				<!-- Clz Btn -->
 				<button class="close-btn" type="button" data-modal-close>
 					<svg class="close-btn-icon" width="11" height="11" alt="close-button">
-						<use href='./images/symbol-defs.svg#close'></use>
-					</svg> 
+						<use href="./images/symbol-defs.svg#close"></use>
+					</svg>
 				</button>
+				<!-- Modal Title -->
 				<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-				<form action="" class="modal-form">
-						<label for="name" class="modal-label">Ім'я</label>
-						<input type="text" name="Name" id="name" class="form-frame">
-
-						<label for="phone" class="modal-label">Телефон</label>
-						<input type="tel" name="Phone Number" id="phone" class="form-frame">
-
-						<label for="email" class="modal-label">Пошта</label>
-						<input type="email" name="E-mail" id="email" class="form-frame">
-
-						<label for="coments" class="modal-label">Коментар</label>
-						<textarea name="Coment"  id="coments" placeholder="Введіть текст" class="form-frame textarea"></textarea>
-					<div class="policy">
-						<input type="checkbox" name="" id="">
-						<p>Погоджуюся з розсилкою та приймаю <a href="" class="policy-link">Умови договору</a></p>
+				<!-- Modal Form -->
+				<form class="modal-form" autocomplete="off">
+					<!-- Username Field -->
+					<label for="name" class="modal-label">Ім'я</label>
+					<div class="modal-field-thumb">
+						<input type="text" name="Name" id="name" class="form-frame" />
+						<svg class="modal-form-icon" width="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-person"></use>
+						</svg>
 					</div>
+					<!-- Phone Number Field -->
+					<label for="phone" class="modal-label">Телефон</label>
+					<div class="modal-field-thumb">
+						<input type="tel" name="Phone Number" id="phone" class="form-frame" />
+						<svg class="modal-form-icon" width="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-phone"></use>
+						</svg>
+					</div>
+					<!-- Email Field-->
+					<label for="email" class="modal-label">Пошта</label>
+					<div class="modal-field-thumb">
+						<input type="email" name="E-mail" id="email" class="form-frame" />
+						<svg class="modal-form-icon" width="18" height="18">
+							<use href="./images/symbol-defs.svg#icon-email"></use>
+						</svg>
+					</div>
+					<!--  Coments Field-->
+					<label for="coments" class="modal-label">Коментар</label>
+					<textarea name="Coment" id="coments" placeholder="Введіть текст" class="form-frame textarea"></textarea>
+					<!-- Policy -->
+					<div class="policy">
+						<input type="checkbox" name="" id="" />
+						<p>
+							Погоджуюся з розсилкою та приймаю
+							<a href="" class="policy-link">Умови договору</a>
+						</p>
+					</div>
+					<!-- Submit Button -->
 					<button type="submit" class="button-primary modal-submit-btn">Відправити</button>
-
 				</form>
 			</div>
 		</div>
 
-	<script src="./js/modal.js"></script>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
