@@ -591,17 +591,17 @@ address,
 	font-size: 16px;
 	line-height: 1.25;
 	padding: 16px 15px;
-	
 	background-color: var(--secondary-page-color);
 	width: 358px;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	outline: none;
 	border-radius: 4px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe:active,
+.subscribe:not(:placeholder-shown),
 .subscribe:focus{
-	outline: 1px solid var(--accent-color) ;
+	border: 1px solid var(--accent-color) ;
 }
 
 .footer-btn{
