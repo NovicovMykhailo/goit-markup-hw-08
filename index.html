@@ -393,13 +393,11 @@
 					<label for="coments" class="modal-label">Коментар</label>
 					<textarea name="Coment" id="coments" placeholder="Введіть текст" class="form-frame textarea"></textarea>
 					<!-- Policy -->
-					<div class="policy">
-						<input type="checkbox" name="" id="" />
-						<p>
-							Погоджуюся з розсилкою та приймаю
-							<a href="" class="policy-link">Умови договору</a>
-						</p>
-					</div>
+					<label class="policy">
+						<input type="checkbox" name="agree" class="checkbox visually-hidden"/>
+						<span class="checkbox-icon"></span>
+						Погоджуюся з розсилкою та приймаю<a href="" class="policy-link">Умови договору</a>
+					</label>
 					<!-- Submit Button -->
 					<button type="submit" class="button-primary modal-submit-btn">Відправити</button>
 				</form>
