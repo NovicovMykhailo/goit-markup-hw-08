@@ -578,6 +578,7 @@ address,
 }
 .footer-form{
 	padding-top: 12px;
+	margin-left: auto; 
 }
 .footer-form-thumb{
 	display: flex;
