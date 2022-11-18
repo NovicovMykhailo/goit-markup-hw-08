@@ -550,8 +550,8 @@ address,
 	text-transform: uppercase;
 	color: var(--primary-page-color);
 	font-weight: 700;
-	font-size: 1.14;
-	line-height: 16px;
+	font-size: 14px;
+	line-height: 1.14;
 	letter-spacing: 0.03em;
 	margin-bottom: 20px;
 }
@@ -675,7 +675,7 @@ address,
 	
 }
 .modal-title{
-	font-size: 700;
+	font-weight: 700;
 	font-size: 20px;
 	line-height: 1.15;	
 	color: var(--primary-text-color)
