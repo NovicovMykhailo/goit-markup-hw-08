@@ -1,0 +1,23 @@
+/* ==================HERO Section==================== */
+.hero-section {
+	background-color: $secondary-page-color;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hero-title {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	margin-bottom: 30px;
+}

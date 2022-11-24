@@ -1,0 +1,111 @@
+/* ==================FOOTER==================== */
+footer {
+	background-color: $secondary-page-color;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.flex-cnt {
+	display: flex;
+	gap: 70px;
+}
+.footer-addresses-container {
+	width: 231px;
+}
+.footer-logo {
+	display: block;
+	margin-bottom: 20px;
+}
+.address-list {
+	margin-bottom: 9px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+address,
+.address-item {
+	font-style: inherit;
+	text-decoration: inherit;
+	line-height: 1.71;
+	color: $footer-link-color;
+	transition: color $anim-std;
+
+}
+.location {
+	color: $pure-whie-logo-color;
+	transition: color $anim-std;
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus
+ {
+	color: $accent-color;
+}
+.footer-links {
+	padding-top: 12px;
+}
+.links-dscr {
+	text-transform: uppercase;
+	color: $primary-page-color;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	margin-bottom: 20px;
+}
+.footer-lnks-list {
+	display: flex;
+	gap: 10px;
+}
+
+.ft-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	fill: $pure-whie-logo-color;
+
+	transition: background-color $anim-std;
+    &:hover, &:focus{
+        background-color: $accent-color;
+    }
+}
+
+.footer-form{
+	padding-top: 12px;
+	margin-left: auto; 
+}
+.footer-form-thumb{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+.subscribe{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
+	line-height: 1.25;
+	padding: 16px 15px;
+	background-color: $secondary-page-color;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	outline: none;
+	border-radius: 4px;
+	transition: border $anim-std;
+    &:not(:placeholder-shown), &:focus{
+        border: 1px solid $accent-color
+    }
+}
+
+
+
