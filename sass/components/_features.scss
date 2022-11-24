@@ -1,0 +1,21 @@
+.items-positions {
+@include flex_grid(4);
+}
+
+.features-bg {
+    @include flex_centering;
+	background-color: $section-color;
+	height: 120px;
+	border: none;
+	margin-bottom: 30px;
+
+}
+
+.features-item > h3 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.features-item > p {
+	color: $secondary-text-color;
+	line-height: 1.71;
+}

@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins.scss";
 @import "./utils/reset-styles";
 @import"./utils/body-styles";
 @import "./utils/container";
@@ -6,12 +7,16 @@
 @import "./components/buttons";
 @import "./components/logo";
 @import "./components/navigation";
+
 @import "./components/header";
+// main page
 @import "./components/hero";
-
-
+@import "./components/features";
+@import "./components/about";
+@import "./components/team";
 @import "./components/clients";
 
 @import "./components/portfolio-gallery";
+
 @import "./components/footer";
 @import "./components/modal";

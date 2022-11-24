@@ -1,16 +1,13 @@
 /* ==================Portfolio Page==================== */
 
 .porfolio-buttons-row {
-	display: flex;
-	justify-content: center;
+	@include flex_centering;
 	gap: 8px;
 	margin-bottom: 50px;
 }
 .portfolio-cards {
-	display: flex;
+	@include flex_grid;
 	flex-wrap: wrap;
-	gap: 30px;
-	flex-basis: 370px;
 }
 .card-overlay {
 	position: relative;
@@ -52,29 +49,26 @@
 }
 .portfolio-card-item{
     & > a{
-        	text-decoration: none;
-	color: inherit;
-	display: block;
+        text-decoration: none;
+		color: inherit;
+		display: block;
     }
     & img{
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         display: block;
 
     }
 }
 
 .portfolio-item-titles-cont {
-	border: 1px solid #eeeeee;
+	border: $border_std #eeeeee;
 	border-top: transparent;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	padding: 20px 24px;
     & > h2{
         font-size: 18px;
         line-height: 2;
         margin-bottom: 4px;
-
     }
     & > p{
         color: $secondary-text-color;

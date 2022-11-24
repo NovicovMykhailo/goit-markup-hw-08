@@ -1,25 +1,21 @@
 /* ==================Clients Section==================== */
 .clients-list {
-	display: flex;
-	gap: 30px;
-	flex-basis: 170px;
-	justify-content: center;
+	@include flex_grid(6);
+	@include flex_centering;
 }
 
 .client-icons {
 	width: 170px;
 	height: 92px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid $icons-color;
+	@include flex_centering(inline-flex);
+	border: $border_std $icons-color;
 	border-radius: 4px;
 	background-color: transparent;
 	fill: $icons-color;
 
 	transition: fill $anim-std, border $anim-std;
     &:hover, &:focus{
-        border: 1px solid $accent-color;
+        border: $border_std $accent-color;
 	    fill: $accent-color;
     }
 }

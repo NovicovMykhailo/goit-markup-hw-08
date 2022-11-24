@@ -1,12 +1,11 @@
 /* ==================FOOTER==================== */
 footer {
 	background-color: $secondary-page-color;
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: 60px;
 }
 .flex-cnt {
-	display: flex;
-	gap: 70px;
+	@include flex_grid(3, 70px)
 }
 .footer-addresses-container {
 	width: 231px;
@@ -59,14 +58,12 @@ address,
 	margin-bottom: 20px;
 }
 .footer-lnks-list {
-	display: flex;
-	gap: 10px;
+	@include flex_grid(4, 10px)
+
 }
 
 .ft-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex_centering;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	width: 44px;
@@ -84,10 +81,7 @@ address,
 	margin-left: auto; 
 }
 .footer-form-thumb{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	@include flex_centering;
 	gap: 15px;
 }
 .subscribe{
@@ -98,12 +92,13 @@ address,
 	background-color: $secondary-page-color;
 	width: 358px;
 	height: 50px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	outline: none;
+	border: $border_std rgba(255, 255, 255, 0.3);
+	outline-offset: -1px;
 	border-radius: 4px;
-	transition: border $anim-std;
+	transition: border-color $anim-std;
     &:not(:placeholder-shown), &:focus{
-        border: 1px solid $accent-color
+        border-color: $accent-color;
+		outline: 1px solid transparent;
     }
 }
 

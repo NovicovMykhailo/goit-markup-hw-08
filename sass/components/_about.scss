@@ -1,0 +1,27 @@
+/* Section = What we are doing */
+.items {
+	position: relative;
+}
+.gallery {
+	padding-top: 0px;
+    @include flex_grid(3)
+}
+.gallery-photo {
+	display: block;
+}
+.gallery-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+    color: $pure-whie-logo-color;
+
+    height: 70px;
+    @include flex_centering(inline-flex);
+	background-color: rgba(47, 48, 58, 0.8);
+    
+}
