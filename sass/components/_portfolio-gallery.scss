@@ -1,30 +1,24 @@
 /* ==================Portfolio Page==================== */
 
-.porfolio-buttons-row {
+.porfolio__filter {
 	@include flex_centering;
 	gap: 8px;
 	margin-bottom: 50px;
 }
-.portfolio-cards {
+.portfolio__cards {
 	@include flex_grid(9);
 	flex-wrap: wrap;
 }
-.card-overlay {
+.portfolio__card-overlay {
 	position: relative;
 	overflow: hidden;
-}
-.card{
-	transition: box-shadow $anim-std;
-    &:hover, &:focus{
-        box-shadow: 
-            0px 1px 1px rgba(0, 0, 0, 0.12), 
-            0px 4px 4px rgba(0, 0, 0, 0.06), 
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+	> img{
+        margin: 0 auto;
+        display: block;}
 
 }
 
-.card-descr {
+.portfolio__card-descr {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -43,24 +37,26 @@
 
 	transition: transform $anim-std;
 
-    .card:hover &, .card:focus &{
+    .portfolio__card-item:hover &, 
+	.portfolio__card-item:focus &{
     transform: translateY(0);
     }
 }
-.portfolio-card-item{
-    & > a{
-        text-decoration: none;
-		color: inherit;
-		display: block;
+.portfolio__card-item{
+	transition: box-shadow $anim-std;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+    &:hover, &:focus{
+        box-shadow: 
+            0px 1px 1px rgba(0, 0, 0, 0.12), 
+            0px 4px 4px rgba(0, 0, 0, 0.06), 
+            1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    & img{
-        margin: 0 auto;
-        display: block;
-
-    }
+   
 }
 
-.portfolio-item-titles-cont {
+.portfolio__card-titles {
 	border: $border_std #eeeeee;
 	border-top: transparent;
 	margin: 0 auto;

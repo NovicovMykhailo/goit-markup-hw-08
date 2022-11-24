@@ -19,10 +19,11 @@ footer {
     &:last-child{
         margin-bottom: 0;
     }
+
 }
 
 .footer__address-link {
-
+	display: block;
 	font-style: normal;
 	text-decoration: none;
 	line-height: 1.71;
