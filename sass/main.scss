@@ -1,3 +1,4 @@
+//utils & basic styles
 @import "./utils/variables";
 @import "./utils/body-styles";
 @import "./utils/mixins.scss";
@@ -16,6 +17,7 @@
 @import "./components/clients";
 //portfolio page
 @import "./components/portfolio-gallery";
-
+//footer
 @import "./components/footer";
+//modal
 @import "./components/modal";
