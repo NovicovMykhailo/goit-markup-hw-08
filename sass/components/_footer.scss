@@ -4,51 +4,46 @@ footer {
 	padding-top: 40px;
 	padding-bottom: 60px;
 }
-.flex-cnt {
+.footer {
 	@include flex_grid(3, 70px)
 }
-.footer-addresses-container {
+.footer__addresses{
 	width: 231px;
 }
-.footer-logo {
+.footer__logo--position {
 	display: block;
 	margin-bottom: 20px;
 }
-.address-list {
+.footer__address-list {
 	margin-bottom: 9px;
     &:last-child{
         margin-bottom: 0;
     }
 }
 
-address,
-.address-item {
-	font-style: inherit;
-	text-decoration: inherit;
+.footer__address-link {
+
+	font-style: normal;
+	text-decoration: none;
 	line-height: 1.71;
 	color: $footer-link-color;
 	transition: color $anim-std;
 
+	&:hover, &:focus{
+		color: $accent-color;
+	}
+
 }
-.location {
+.footer__address-location {
 	color: $pure-whie-logo-color;
 	transition: color $anim-std;
-    &:hover, &:focus{
-        color: $accent-color;
-    }
 }
 
-.mail:hover,
-.mail:focus,
-.tel:hover,
-.tel:focus
- {
-	color: $accent-color;
-}
-.footer-links {
+
+.footer__links {
 	padding-top: 12px;
 }
-.links-dscr {
+.footer__dscr{
 	text-transform: uppercase;
 	color: $primary-page-color;
 	font-weight: 700;
@@ -57,12 +52,12 @@ address,
 	letter-spacing: 0.03em;
 	margin-bottom: 20px;
 }
-.footer-lnks-list {
+.footer__links-list {
 	@include flex_grid(4, 10px)
 
 }
 
-.ft-icon {
+.footer__icon {
 	@include flex_centering;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
@@ -76,15 +71,15 @@ address,
     }
 }
 
-.footer-form{
+.footer__form{
 	padding-top: 12px;
 	margin-left: auto; 
 }
-.footer-form-thumb{
+.footer__form-thumb{
 	@include flex_centering;
 	gap: 15px;
 }
-.subscribe{
+.footer__subscribe-field{
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 16px;
 	line-height: 1.25;
