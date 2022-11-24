@@ -1,4 +1,4 @@
-@mixin flex_grid ($items, $gap: 30px){
+@mixin flex_grid ($items, $gap:30px){
 	display: flex; 
     flex-basis: calc((100% -  (($items - 1) * $gap)) / $items);
 	gap: $gap;

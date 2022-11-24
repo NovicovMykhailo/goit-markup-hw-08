@@ -1,12 +1,5 @@
-.section-title {
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	color: var(--primary-text-color);
-	margin-bottom: 50px;
-}
-
 /* ==================Utilites==================== */
+
 .visually-hidden {
 	position: absolute;
 	white-space: nowrap;
@@ -19,13 +12,24 @@
 	clip-path: inset(50%);
 	margin: -1px;
 }
-
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
 .is-hidden {
 	pointer-events: none;
 	opacity: 0;
 	visibility: hidden;
 }
+
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.section-title {
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	color: $primary-text-color;
+	margin-bottom: 50px;
+}
+
+
+

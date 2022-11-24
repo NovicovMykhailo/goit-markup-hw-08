@@ -6,7 +6,7 @@
 	margin-bottom: 50px;
 }
 .portfolio-cards {
-	@include flex_grid;
+	@include flex_grid(9);
 	flex-wrap: wrap;
 }
 .card-overlay {

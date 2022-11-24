@@ -6,9 +6,10 @@
 	text-decoration: none;
 	color: $accent-color;
 }
+.header__logo {
+	color: $pure-black-logo-color;
+}
+
 .footer-logo-color {
 	color: $pure-whie-logo-color;
-}
-.head-logo-color {
-	color: $pure-black-logo-color;
 }
