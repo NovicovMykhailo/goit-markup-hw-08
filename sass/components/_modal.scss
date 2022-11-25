@@ -57,7 +57,7 @@
         margin-top: 12px;
     }
 }
-.modal__input-frame{
+.modal__input{
 	border: $border_std rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	width: 100%;
@@ -71,10 +71,10 @@
     }
 
 }
-.modal__field-thumb{
+.modal__thumb{
 	position: relative;
 }
-.modal__form-icon{
+.modal__icon{
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -82,12 +82,12 @@
 	margin-left: 12px;
 	fill: $primary-text-color;
 	transition: fill $anim-std;
-    .form-frame:focus ~ &, .form-frame:active ~ &{
+    .modal__input:focus ~ &, .modal__input:active ~ &{
         fill: $accent-color;
     }
 }
 
-.modal__input-frame.textarea{
+.modal__input.textarea{
 	height: 120px;
 	padding: 12px 16px;
 	word-wrap: break-word;

@@ -241,7 +241,7 @@ header {
   letter-spacing: 0.02em;
 }
 
-.header-nav__menu-item {
+.header-nav__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -256,7 +256,7 @@ header {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav__menu-item:hover, .header-nav__menu-item:focus {
+.header-nav__item:hover, .header-nav__item:focus {
   color: #2196f3;
 }
 
@@ -301,6 +301,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 500;
   padding: 32px 0px;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -846,7 +847,7 @@ footer {
   margin-top: 12px;
 }
 
-.modal__input-frame {
+.modal__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
@@ -857,15 +858,15 @@ footer {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input-frame:focus, .modal__input-frame:active {
+.modal__input:focus, .modal__input:active {
   border-color: #2196f3;
 }
 
-.modal__field-thumb {
+.modal__thumb {
   position: relative;
 }
 
-.modal__form-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 0;
@@ -876,11 +877,11 @@ footer {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-frame:focus ~ .modal__form-icon, .form-frame:active ~ .modal__form-icon {
+.modal__input:focus ~ .modal__icon, .modal__input:active ~ .modal__icon {
   fill: #2196f3;
 }
 
-.modal__input-frame.textarea {
+.modal__input.textarea {
   height: 120px;
   padding: 12px 16px;
   word-wrap: break-word;
@@ -889,37 +890,37 @@ footer {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__input-frame.textarea::-webkit-input-placeholder {
+.modal__input.textarea::-webkit-input-placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.modal__input-frame.textarea::-moz-placeholder {
+.modal__input.textarea::-moz-placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.modal__input-frame.textarea:-ms-input-placeholder {
+.modal__input.textarea:-ms-input-placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.modal__input-frame.textarea::-ms-input-placeholder {
+.modal__input.textarea::-ms-input-placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.modal__input-frame.textarea::placeholder {
+.modal__input.textarea::placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.modal__input-frame.textarea:focus, .modal__input-frame.textarea:active {
+.modal__input.textarea:focus, .modal__input.textarea:active {
   border-color: #2196f3;
 }
 
