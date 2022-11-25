@@ -1,6 +1,6 @@
 /* ==================Portfolio Page==================== */
 
-.porfolio__filter {
+.portfolio__filter {
 	@include flex_centering;
 	gap: 8px;
 	margin-bottom: 50px;
@@ -28,7 +28,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.55;
-	color: $pure-whie-logo-color;
+	color: $pure-white-logo-color;
 
 	background-color: $accent-color;
 	padding: 63px 24px;

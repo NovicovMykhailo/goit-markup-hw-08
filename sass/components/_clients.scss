@@ -1,10 +1,10 @@
 /* ==================Clients Section==================== */
-.clients-list {
+.clients{
 	@include flex_grid(6);
 	@include flex_centering;
 }
 
-.client-icons {
+.client__icon {
 	width: 170px;
 	height: 92px;
 	@include flex_centering(inline-flex);

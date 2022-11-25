@@ -3,11 +3,11 @@
 .team {
 	background-color: $section-color;
 }
-.team-cards {
+.team__card-gallery{
     @include flex-grid (4)
 }
 
-.team-card {
+.team__card-item {
 	text-align: center;
 	background-color: $primary-page-color;
 	border-radius: 0px 0px 4px 4px;
@@ -19,29 +19,31 @@
         display: block;
     }
 }
-
-.member-card-description {
+.team__member-card-description{
 	padding: 30px;
-    & h3{
-        font-size: 16px;
-        line-height: 1.18;
-        margin-bottom: 10px;
-    }
-    & p{
-        margin-bottom: 16px;
-        font-size: 16px;
-        line-height: 1.18;
-        color: $secondary-text-color;
-    }
 }
 
-.link-cards {
+.team__member-name{
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+}
+.team__member-position{
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $secondary-text-color;
+}
+
+
+.team__member-socials {
     @include flex-grid(4, 10px);
 	justify-content: flex-start;
 	flex-wrap: wrap;
 
 }
-.card-icons {
+.team__member-social-icon {
     @include flex_centering;
 
 	background-color: transparent;
@@ -53,7 +55,7 @@
 
 	transition: fill $anim-std, background-color $anim-std;
     &:hover, &:focus{
-        fill: $pure-whie-logo-color;
+        fill: $pure-white-logo-color;
 	    background-color: $accent-color;
     }
 }

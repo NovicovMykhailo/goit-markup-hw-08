@@ -1,18 +1,20 @@
-//utils & basic styles
-@import "./utils/variables";
-@import "./utils/body-styles";
-@import "./utils/mixins.scss";
+//reset styles
 @import "./utils/reset-styles";
-@import "./utils/container";
+//variables
+@import "./utils/variables";
+//mixins
+@import "./utils/mixins.scss";
+//base
 @import "./utils/utilities-classes";
+@import "./utils/base";
 @import "./components/buttons";
 @import "./components/logo";
 //header
 @import "./components/header";
-// main page
+//main page
 @import "./components/hero";
 @import "./components/features";
-@import "./components/about";
+@import "./components/gallery";
 @import "./components/team";
 @import "./components/clients";
 //portfolio page
