@@ -14,6 +14,11 @@
 	background-size: cover;
 	max-width: 1600px;
 	margin: 0 auto;
+
+	@media screen and (max-width: $mobile) {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
 }
 .hero__title {
 
@@ -26,4 +31,12 @@
 	color: $primary-page-color;
 
 	margin-bottom: 30px;
+
+	@media screen and (max-width: $mobile) {
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.61;
+
+		margin-bottom: 40px;
+	}
 }

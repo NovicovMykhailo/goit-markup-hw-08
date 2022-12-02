@@ -1,7 +1,16 @@
 /* Section = What we are doing */
 .gallery {
-	padding-top: 0px;
-    @include flex_grid(3)
+	display: none;
+	// @include hide_items;
+
+
+	@media screen and (min-width: $desktop) {
+		
+		@include flex_grid(3);
+		padding-top: 0px;
+	
+	}
+
 }
 
 .gallery__items {

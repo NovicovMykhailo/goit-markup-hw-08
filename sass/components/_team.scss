@@ -4,7 +4,22 @@
 	background-color: $section-color;
 }
 .team__card-gallery{
-    @include flex-grid (4)
+    
+    @media screen and (max-width: $mobile) {
+        @include flex_centering(flex);
+        flex-direction: column;
+
+        gap: 30px;
+        
+    }
+    @media screen and (min-width: $mobile), (max-width: $tablet){
+        @include flex-grid (2)
+    }
+    @media screen and (min-width: $desktop){
+        @include flex-grid (4)
+    }
+
+    
 }
 
 .team__card-item {
@@ -17,6 +32,10 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     & img{
         display: block;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
     }
 }
 .team__member-card-description{

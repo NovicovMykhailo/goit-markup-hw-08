@@ -39,6 +39,12 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .section__title {
   font-size: 36px;
@@ -72,6 +78,11 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 /* ==================All Buttons==================== */
@@ -212,7 +223,7 @@ body {
   color: #ffffff;
 }
 
-/* ==================Headder==================== */
+/* ================== Headder ==================== */
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -333,6 +344,12 @@ header {
   max-width: 1600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 
 .hero__title {
   font-weight: 900;
@@ -343,6 +360,14 @@ header {
   color: #ffffff;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.61;
+    margin-bottom: 40px;
+  }
+}
 
 .features {
   display: -webkit-box;
@@ -351,6 +376,11 @@ header {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
   gap: 30px;
+}
+@media screen and (max-width: 480px) {
+  .features {
+    display: block;
+  }
 }
 
 .features__bg {
@@ -373,20 +403,36 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+  .features__item > h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+}
 .features__item > p {
   color: #757575;
   line-height: 1.71;
 }
+@media screen and (max-width: 480px) {
+  .features__item {
+    margin-bottom: 30px;
+  }
+}
 
 /* Section = What we are doing */
 .gallery {
-  padding-top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+    gap: 30px;
+    padding-top: 0px;
+  }
 }
 
 .gallery__items {
@@ -424,13 +470,43 @@ header {
   background-color: #f5f4fa;
 }
 
-.team__card-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
-  gap: 30px;
+@media screen and (max-width: 480px) {
+  .team__card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 480px), (max-width: 768px) {
+  .team__card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+  }
 }
 
 .team__card-item {
@@ -442,6 +518,11 @@ header {
 }
 .team__card-item img {
   display: block;
+}
+@media screen and (max-width: 480px) {
+  .team__card-item {
+    width: 100%;
+  }
 }
 
 .team__member-card-description {

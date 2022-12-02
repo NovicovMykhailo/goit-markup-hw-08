@@ -1,5 +1,10 @@
 .features{
 @include flex_grid(4);
+
+@media screen and (max-width: $mobile) {
+	display: block;
+}
+
 }
 
 .features__bg {
@@ -8,15 +13,28 @@
 	height: 120px;
 	border: none;
 	margin-bottom: 30px;
+	
+
 
 }
 .features__item{
 	& > h3{
 		text-transform: uppercase;
 		margin-bottom: 10px;
+
+		@media screen and (max-width: $mobile) {
+			text-align: center;
+			font-size: 14px;
+		}	
 	}
 	& > p{
 		color: $secondary-text-color;
 		line-height: 1.71;
 	}
+
+	@media screen and (max-width: $mobile) {
+	
+		margin-bottom: 30px;
+	}
+	
 }
