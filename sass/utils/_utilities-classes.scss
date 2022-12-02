@@ -24,8 +24,6 @@
 	@media screen and (max-width: $mobile) {
 		padding-top: 60px;
 		padding-bottom: 60px;
-		
-
 	}
 }
 .section__title {
@@ -34,6 +32,10 @@
 	text-align: center;
 	color: $primary-text-color;
 	margin-bottom: 50px;
+
+	@media screen and (max-width: $mobile) {
+		margin-bottom: 30px;
+    }
 }
 .link {
 	text-decoration: none;

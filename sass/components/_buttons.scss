@@ -23,6 +23,10 @@
         background-color: #188ce8;
 	    color: $pure-white-logo-color;
     }
+
+	@media screen and (max-width: $mobile) {
+	padding: 10px 24px;
+	}
 }
 
 .button-secondary {

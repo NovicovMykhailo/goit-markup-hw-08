@@ -2,6 +2,7 @@
 
 .team {
 	background-color: $section-color;
+
 }
 .team__card-gallery{
     
@@ -10,13 +11,14 @@
         flex-direction: column;
 
         gap: 30px;
-        
+
     }
-    @media screen and (min-width: $mobile), (max-width: $tablet){
-        @include flex-grid (2)
-    }
+    // @media screen and (min-width: $tablet){
+    //     @include flex-grid (2);
+    //     flex-wrap: wrap;
+    // }
     @media screen and (min-width: $desktop){
-        @include flex-grid (4)
+        @include flex-grid (4);
     }
 
     
@@ -32,9 +34,6 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     & img{
         display: block;
-    }
-
-    @media screen and (max-width: $mobile) {
         width: 100%;
     }
 }
@@ -58,7 +57,7 @@
 
 .team__member-socials {
     @include flex-grid(4, 10px);
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
 
 }

@@ -2,10 +2,17 @@
 .clients{
 	@include flex_grid(6);
 	@include flex_centering;
+
+	@media screen and (max-width: $mobile) {
+		@include flex_grid(2);
+		flex-wrap: wrap;
+		align-content: space-between;
+		
+	}
 }
 
 .clients__icon {
-	width: 170px;
+	min-width: 170px;
 	height: 92px;
 	@include flex_centering(inline-flex);
 	border: $border_std $icons-color;
@@ -18,4 +25,9 @@
         border: $border_std $accent-color;
 	    fill: $accent-color;
     }
+
+
+	@media screen and (max-width: $mobile){
+		width: calc( ($mobile - 60px) / 2)
+	}
 }

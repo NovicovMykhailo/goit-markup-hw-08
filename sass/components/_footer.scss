@@ -3,9 +3,18 @@ footer {
 	background-color: $secondary-page-color;
 	padding-top: 60px;
 	padding-bottom: 60px;
+
 }
 .footer {
-	@include flex_grid(3, 70px)
+	@include flex_grid(3, 70px);
+
+	@media screen and (max-width: $mobile) {
+		gap: 60px;
+		flex-direction: column;
+		@include flex-centering;
+		text-align:center;
+		
+	}
 }
 .footer__addresses{
 	width: 231px;
@@ -75,10 +84,19 @@ footer {
 .footer__form{
 	padding-top: 12px;
 	margin-left: auto; 
+	@media screen and (max-width: $mobile) {
+	margin-left: 0;
+	}
 }
 .footer__form-thumb{
 	@include flex_centering;
 	gap: 15px;
+
+	@media screen and (max-width: $mobile) {
+		flex-direction: column;
+		text-align: center;
+	}
+
 }
 .footer__subscribe-field{
 	color: rgba(255, 255, 255, 0.6);
@@ -86,7 +104,7 @@ footer {
 	line-height: 1.25;
 	padding: 16px 15px;
 	background-color: $secondary-page-color;
-	width: 358px;
+	min-width: 358px;
 	height: 50px;
 	border: $border_std rgba(255, 255, 255, 0.3);
 	outline-offset: -1px;
@@ -96,6 +114,10 @@ footer {
         border-color: $accent-color;
 		outline: 1px solid transparent;
     }
+
+	@media screen and (max-width: $mobile) {
+		min-width: calc($mobile - 30px)
+	}
 }
 
 
