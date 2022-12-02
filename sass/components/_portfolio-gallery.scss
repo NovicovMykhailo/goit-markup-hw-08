@@ -8,6 +8,15 @@
 .portfolio__cards {
 	@include flex_grid(9);
 	flex-wrap: wrap;
+
+	@media screen and (min-width: $desktop) {
+	@include flex_grid(2, 30px);
+	// width: 354px;
+	}
+
+	@media screen and (min-width: $desktop) {
+	@include flex_grid(9);
+	}
 }
 .portfolio__card-overlay {
 	position: relative;
@@ -37,6 +46,10 @@
 
 	transition: transform $anim-std;
 
+	& > img{
+		width: auto;
+	}
+
     .portfolio__card-item:hover &, 
 	.portfolio__card-item:focus &{
     transform: translateY(0);
@@ -53,6 +66,10 @@
             0px 4px 4px rgba(0, 0, 0, 0.06), 
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+	@media screen and (min-width: $tablet) {
+		width: 354px;
+		}
    
 }
 
