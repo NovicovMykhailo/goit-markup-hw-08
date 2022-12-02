@@ -6,15 +6,29 @@ footer {
 
 }
 .footer {
-	@include flex_grid(3, 70px);
+	@include flex-centering;
+	flex-direction: column;
+	text-align: center;
+	gap: 60px;
 
-	@media screen and (max-width: $mobile) {
-		gap: 60px;
-		flex-direction: column;
+
+
+	@media screen and (min-width: $tablet) {
+		gap: 130px;
+		flex-direction: row;
+		flex-wrap: wrap;
 		@include flex-centering;
-		text-align:center;
+		align-items: baseline;
+		justify-content: space-evenly
 		
 	}
+	@media screen and (min-width: $desktop){
+		@include flex_grid(3, 70px);
+		
+		text-align: left;
+	}
+
+
 }
 .footer__addresses{
 	width: 231px;
@@ -82,20 +96,24 @@ footer {
 }
 
 .footer__form{
+
+	@media screen and (min-width: $desktop) {
 	padding-top: 12px;
 	margin-left: auto; 
-	@media screen and (max-width: $mobile) {
-	margin-left: 0;
 	}
 }
 .footer__form-thumb{
 	@include flex_centering;
+	flex-direction: column;
+	text-align: center;
 	gap: 15px;
 
-	@media screen and (max-width: $mobile) {
-		flex-direction: column;
-		text-align: center;
-	}
+@media screen and (min-width: $desktop){
+	flex-direction: row;
+	gap: 12px;
+	
+}
+
 
 }
 .footer__subscribe-field{
@@ -104,7 +122,9 @@ footer {
 	line-height: 1.25;
 	padding: 16px 15px;
 	background-color: $secondary-page-color;
-	// min-width: 358px;
+	width: calc(100vw - 30px);
+	max-width: 450px;
+	
 	height: 50px;
 	border: $border_std rgba(255, 255, 255, 0.3);
 	outline-offset: -1px;
@@ -114,10 +134,14 @@ footer {
         border-color: $accent-color;
 		outline: 1px solid transparent;
     }
-
-	@media screen and (max-width: $mobile) {
-		width: calc(100vw - 30px);
+	@media screen and (min-width: $tablet) {
+		width: 460px;
 	}
+
+	@media screen and (min-width: $desktop) {
+		width: 358px;
+	}
+
 }
 
 

@@ -15,7 +15,8 @@
 	line-height: 1.85;
 	text-align: center;
 	
-	padding: 10px 32px;
+	padding: 10px 24px;
+	
 
 	transition: 
 		color $anim-std, 
@@ -25,8 +26,8 @@
 	    color: $pure-white-logo-color;
     }
 
-	@media screen and (max-width: $mobile) {
-	padding: 10px 24px;
+	@media screen and (min-width: $desktop) {
+		padding: 10px 32px;
 	}
 }
 

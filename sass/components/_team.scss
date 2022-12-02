@@ -5,20 +5,17 @@
 
 }
 .team__card-gallery{
+    @include flex_centering(flex);
+    flex-direction: column;
+    gap: 30px;
     
-    @media screen and (max-width: $mobile) {
-        @include flex_centering(flex);
-        flex-direction: column;
-        gap: 30px;
-
-    }
     @media screen and (min-width: $tablet){
-        
-        @include flex-grid (2);
+        @include flex-grid (2, 30px);
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     @media screen and (min-width: $desktop){
         @include flex-grid (4);
-        flex-basis: 270px;
     }
 
     
@@ -34,8 +31,20 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     & img{
         display: block;
-        width: 100%;
+        margin: 0 auto;
+        width: 450px;
+
+        @media screen and (min-width: $tablet){
+            width: 354px;
+        }
+        @media screen and (min-width: $desktop){
+            width: 270px; 
+        }
     }
+
+ 
+
+
 }
 .team__member-card-description{
 	padding: 30px;

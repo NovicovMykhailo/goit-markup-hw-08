@@ -5,20 +5,30 @@ header{
 }
 .header {
 	@include flex_centering;
-	@media screen and (max-width: $mobile) {
-		display: none;
-	}
+	display: none;
+
+
 	@media screen and (min-width: $tablet) {
-		display: none;
+		display: flex;
 	}
 
 	
 }
 .header-nav__menu {
 	@include flex_grid(3, 50px);
-	margin-left: 94px;
 	font-weight: 500;
 	letter-spacing: 0.02em;
+
+
+	@media screen and (min-width: $tablet) {
+		margin-left: 87px
+		 
+	 }
+
+	@media screen and (min-width: $desktop) {
+       margin-left: 80px
+		
+	}
 	
 }
 
@@ -43,27 +53,55 @@ header{
         left: 0;
 		width: 100%;
 		height: 4px;
-		transform: translate(0, -3px);
+		transform: translate(0, -1px);
 		background-color: $accent-color;
 		border-radius: 2px;
+
+		@media screen and (min-width: $desktop) {
+			transform: translate(0, -3px);
+			}
+
     }
 }
 
 .header-contacts {
-	@include flex_grid(2, 50px);
-	justify-content: flex-end;
+	@include flex_grid(2, 10px);
+	justify-content: flex-start;
 	margin-left: auto;
+	
+	@media screen and (min-width: $tablet) {
+		flex-wrap: wrap;
+		padding: 21px 0;
+		margin-left: 96px;
+			 
+		
+		}
+		@media screen and (min-width: $desktop) {
+		margin-left: 96px;
+		justify-content: flex-end;
+		padding: 0;
+		gap: 30px
+		
+			 
+		 }
+		 
 }
 
 .header-contacts__item {
 	@include flex_centering;
+	justify-content: flex-start;
 	font-weight: 500;
-	padding: 32px 0px;
+	font-size: 12px ;
 	color: $secondary-text-color;
 	transition: color $anim-std;
     &:hover, &:focus{
         color: $accent-color;
     }
+
+	@media screen and (min-width: $desktop) {
+		padding: 32px 0px;
+		font-size: 14px ;
+		}
 }
 .header-contacts__icons {
 	margin-right: 10px;
@@ -72,4 +110,9 @@ header{
 	&:focus {
 		fill: $accent-color;
 	}
+	@media screen and (min-width: $tablet) {
+		width: 14px;
+		margin-right: 8px;
+		
+		}
 }

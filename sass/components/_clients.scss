@@ -1,20 +1,32 @@
 /* ==================Clients Section==================== */
 .clients{
-	@include flex_grid(6);
-	@include flex_centering;
+	@include flex_grid(2, 15px);
+	flex-wrap: wrap;
+	align-content: space-between;
 
-	@media screen and (max-width: $mobile) {
-		@include flex_grid(2, 15px);
-		flex-wrap: wrap;
-		align-content: space-between;
-		
+	@media screen and (max-width: $tablet){
+		@include flex_grid(3);
+		@include flex_centering;
 	}
+	
+
+	@media screen and (min-width: $desktop){
+		@include flex_grid(6, 30px);
+		@include flex_centering;
+		justify-content: center;
+	}
+
 }
 
 .clients__icon {
-	max-width: 170px;
+	
 	height: 92px;
+	width: calc(((100vw - 30px)/2) - 15px);
+	max-width: 210px;
 	@include flex_centering(inline-flex);
+	@include flex_grid(2);
+	
+
 	border: $border_std $icons-color;
 	border-radius: 4px;
 	background-color: transparent;
@@ -27,7 +39,20 @@
     }
 
 
-	@media screen and (max-width: $mobile){
-		min-width: calc(((100vw - 30px)/2) - 15px)
+	@media screen and (min-width: $tablet){
+		@include flex_grid(3, 30px);
+		
+		max-width: calc(226px);
+
+
+		
+	}
+
+
+
+	@media screen and (min-width: $desktop){
+		width: 170px;
+	
+
 	}
 }
