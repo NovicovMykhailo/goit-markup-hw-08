@@ -1,6 +1,6 @@
 @mixin flex_grid ($items, $gap:30px){
 	display: flex; 
-    flex-basis: calc((100% -  (($items - 1) * $gap)) / $items);
+    flex-basis: calc((100vw -  (($items - 1) * $gap)) / $items);
 	gap: $gap;
 }
 @mixin flex_centering ($type:flex){

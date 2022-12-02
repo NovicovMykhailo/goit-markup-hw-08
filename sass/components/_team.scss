@@ -9,16 +9,16 @@
     @media screen and (max-width: $mobile) {
         @include flex_centering(flex);
         flex-direction: column;
-
         gap: 30px;
 
     }
-    // @media screen and (min-width: $tablet){
-    //     @include flex-grid (2);
-    //     flex-wrap: wrap;
-    // }
+    @media screen and (min-width: $tablet){
+        
+        @include flex-grid (2);
+    }
     @media screen and (min-width: $desktop){
         @include flex-grid (4);
+        flex-basis: 270px;
     }
 
     

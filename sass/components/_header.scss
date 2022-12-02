@@ -1,9 +1,17 @@
 /* ================== Headder ==================== */
 header{
 	border-bottom: $border_std #ececec;
+
 }
 .header {
 	@include flex_centering;
+	@media screen and (max-width: $mobile) {
+		display: none;
+	}
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+
 	
 }
 .header-nav__menu {

@@ -4,7 +4,7 @@
 	@include flex_centering;
 
 	@media screen and (max-width: $mobile) {
-		@include flex_grid(2);
+		@include flex_grid(2, 15px);
 		flex-wrap: wrap;
 		align-content: space-between;
 		
@@ -12,7 +12,7 @@
 }
 
 .clients__icon {
-	min-width: 170px;
+	max-width: 170px;
 	height: 92px;
 	@include flex_centering(inline-flex);
 	border: $border_std $icons-color;
@@ -28,6 +28,6 @@
 
 
 	@media screen and (max-width: $mobile){
-		width: calc( ($mobile - 60px) / 2)
+		min-width: calc(((100vw - 30px)/2) - 15px)
 	}
 }
