@@ -251,13 +251,10 @@ body {
   margin: 10px;
   padding: 0;
 }
-.header-nav__button .menu-icon, .header-nav__button .cross-icon {
-  fill: #000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-nav__button:active {
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .header-nav__button {
+    display: none;
+  }
 }
 
 .mobile-menu_button {
@@ -266,9 +263,12 @@ body {
   height: 40px;
   top: 0;
   right: 15px;
-  fill: #000;
+  fill: currentColor;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu_button:hover {
+  fill: #2196f3;
 }
 
 /* ==================Logo==================== */
@@ -297,6 +297,7 @@ body {
   background-color: #fff;
   padding: 48px 40px;
   opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-nav__menu {
