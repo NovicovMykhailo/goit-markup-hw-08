@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Studia</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,17 +25,64 @@
 					Web<span class="header__logo">Studio</span>
 				</a>
 				<nav class="header-nav">
+					<button class="header-nav__button js-open-menu" type="button" aria-expanded="false">
+						<svg width="40" height="40">
+							<use class="menu-icon" href="./images/symbol-defs.svg#menu"></use>
+						</svg>
+					</button>
 					<ul class="header-nav__menu">
 						<li><a href="./index.html" class="header-nav__item link active-page">Студія</a></li>
-						<li><a href="./portfolio.html" class="link header-nav__item ">Портфоліо</a></li>
+						<li><a href="./portfolio.html" class="link header-nav__item">Портфоліо</a></li>
 						<li><a href="" class="link header-nav__item">Контакти</a></li>
 					</ul>
 				</nav>
+				<div class="mobile-menu js-menu-container">
+					<button class="header-nav__button mobile-menu_button is-open js-close-menu" type="button" aria-expanded="true">	
+						<svg width="40" height="40">
+							<use class="cross-icon" href="./images/symbol-defs.svg#cross"></use>
+						</svg>
+					</button>
+
+					<ul class="mobile-nav__menu">
+						<li class="mobile-nav__item"><a href="./index.html" class="link active-page">Студія</a></li>
+						<li class="mobile-nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+						<li class="mobile-nav__item"><a href="" class="link">Контакти</a></li>
+					</ul>
+
+					<ul class="mobile-contacts">
+						<li class="mobile-contacts__item mobile-menu__phone">
+							<a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+						</li>
+						<li class="mobile-contacts__item">
+							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-links">
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Instagram
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Twitter
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Facebook
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							LinkedIn
+						</li>
+					</ul>
+				</div>
 
 				<ul class="header-contacts">
 					<li>
-						<a href="mailto:info@devstudio.com" class="link header-contacts__item ">
-							<svg width="16" height="16" class="header-contacts__icons"><use href="./images/symbol-defs.svg#mail"></use></svg>
+						<a href="mailto:info@devstudio.com" class="link header-contacts__item">
+							<svg width="16" height="16" class="header-contacts__icons">
+								<use href="./images/symbol-defs.svg#mail"></use>
+							</svg>
 							info@devstudio.com
 						</a>
 					</li>
@@ -110,7 +157,12 @@
 							<p class="gallery__descr">Десктопні додатки</p>
 						</li>
 						<li class="gallery__items">
-							<img class="gallery__photo" src="./images/box2.jpg" width="370" alt="Picture of working man on cellphone"/>
+							<img
+								class="gallery__photo"
+								src="./images/box2.jpg"
+								width="370"
+								alt="Picture of working man on cellphone"
+							/>
 							<p class="gallery__descr">Мобільні додатки</p>
 						</li>
 						<li class="gallery__items">
@@ -283,7 +335,7 @@
 		</main>
 		<!--Підвал-->
 		<footer>
-			<div class="footer container ">
+			<div class="footer container">
 				<!-- Address -->
 				<div class="footer__addresses">
 					<a href="./index.html" class="logo footer__logo-position">
@@ -304,14 +356,16 @@
 							<li class="footer__address-list">
 								<a href="mailto:info@devstudio.com" class="footer__address-link">info@devstudio.com</a>
 							</li>
-							<li class="footer__address-list"><a href="tel:+380961111111" class="footer__address-link">+38 096 111 11 11</a></li>
+							<li class="footer__address-list">
+								<a href="tel:+380961111111" class="footer__address-link">+38 096 111 11 11</a>
+							</li>
 						</ul>
 					</address>
 				</div>
 				<div class="footer__links">
 					<p class="footer__dscr">Приєднуйтесь</p>
 					<ul class="footer__links-list">
-						<li >
+						<li>
 							<a class="footer__icon" href="">
 								<svg width="20" height="20"><use href="./images/symbol-defs.svg#instagram"></use></svg>
 							</a>
@@ -389,9 +443,10 @@
 					<textarea name="Comment" id="comments" placeholder="Введіть текст" class="modal__input textarea"></textarea>
 					<!-- Policy -->
 					<label class="modal__policy">
-						<input type="checkbox" name="agree" class="checkbox visually-hidden"/>
+						<input type="checkbox" name="agree" class="checkbox visually-hidden" />
 						<span class="checkbox-icon"></span>
-						Погоджуюся з розсилкою та приймаю<a href="" class="modal__policy-link">Умови договору</a>
+						Погоджуюся з розсилкою та приймаю
+						<a href="" class="modal__policy-link">Умови договору</a>
 					</label>
 					<!-- Submit Button -->
 					<button type="submit" class="button-primary modal__submit-btn">Відправити</button>
@@ -400,5 +455,6 @@
 		</div>
 		<!-- JS Connection -->
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

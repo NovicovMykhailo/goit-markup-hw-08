@@ -1,14 +1,11 @@
 /* Section = What we are doing */
 .gallery {
-	display: none;
-	// @include hide_items;
+	@include flex_grid(3);
+	padding-top: 0px;
 
-
-	@media screen and (min-width: $desktop) {
-		
-		@include flex_grid(3);
-		padding-top: 0px;
-	
+	@media screen and (max-width: 1199px) {
+		display: none;
+	 
 	}
 
 }

@@ -116,5 +116,31 @@
     }
 
 }
+.header-nav__button{
+	border: none;
+	background-color: transparent;
+	@include flex_centering;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	padding: 0;
 
+	.menu-icon, .cross-icon{
+		fill: #000;
+		transition: fill $anim-std, opacity $anim-std;};
+	&:active {
+		fill: $accent-color;
+	}
+	
+}
+.mobile-menu_button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 15px;
+	fill: #000;
+	transition: fill $anim-std, opacity $anim-std;
+
+}
 

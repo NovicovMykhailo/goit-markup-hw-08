@@ -2,22 +2,29 @@
 header{
 	border-bottom: $border_std #ececec;
 
+	
+
 }
 .header {
 	@include flex_centering;
-	display: none;
-
-
+	justify-content: space-between;
+	
 	@media screen and (min-width: $tablet) {
 		display: flex;
 	}
 
 	
 }
+
 .header-nav__menu {
 	@include flex_grid(3, 50px);
 	font-weight: 500;
 	letter-spacing: 0.02em;
+
+	@media screen and (max-width:  767px) {
+		display: none;
+		 
+	 }
 
 
 	@media screen and (min-width: $tablet) {
@@ -31,6 +38,8 @@ header{
 	}
 	
 }
+
+
 
 .header-nav__item  {
 	@include flex_centering(inline-flex);
@@ -68,6 +77,12 @@ header{
 	@include flex_grid(2, 10px);
 	justify-content: flex-start;
 	margin-left: auto;
+
+
+	@media screen and (max-width:  767px) {
+		display: none;
+		 
+	 }
 	
 	@media screen and (min-width: $tablet) {
 		flex-wrap: wrap;

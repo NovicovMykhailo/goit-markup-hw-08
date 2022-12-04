@@ -10,13 +10,17 @@
 	top: 0;
 	bottom: 0;
 	transition: opacity $anim-std;
+
+	@media screen and (max-width: $mobile){	
+		padding: 0 15px;
+	}
 }
 
 .modal {
 	position: relative;
 	background-color: $pure-white-logo-color;
-	width: 528px;
-	min-height: 581px;
+	width: 450px;
+	min-height: 609px;
 	border-radius: 4px;
 	transform: scale(1);
 	transition: transform $anim-std 125ms;
@@ -29,7 +33,13 @@
     .backdrop.is-hidden &{
         opacity: 0;
 	    transform: scale(1.2);
+		
     }
+	@media screen and (min-width: $desktop){
+		width: 528px;
+		min-height: 581px;
+	}
+
 }
 
 .modal__form{
@@ -41,8 +51,12 @@
 .modal__title{
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;	
+	line-height: 1.5;	
 	color: $primary-text-color;
+
+	@media screen and (min-width: $tablet){	
+		line-height: 1.15;	
+	}
 }
 
 .modal__label{
@@ -110,9 +124,14 @@
 	user-select: none;
 	@include flex_centering;
 	gap: 8px;
+	font-size: 12px;
 	line-height: 1.7;
 	color: $secondary-text-color;
 	margin-top: 20px;
+
+	@media screen and (min-width: $desktop){	
+		font-size: 14px;
+	}
 	
 }
 
