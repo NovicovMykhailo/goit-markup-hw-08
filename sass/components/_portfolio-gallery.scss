@@ -20,6 +20,7 @@
 .portfolio__cards {
 	@include flex_centering;
 	flex-direction: column;
+	gap: 30px;
 	
 
 	@media screen and (min-width: 767px) {
@@ -49,7 +50,7 @@
 	background-color: $accent-color;
 	padding: 63px 24px;
 	opacity: 0.9;
-	transform: translateY(100%);
+	transform: translateY(101%);
 
 	transition: transform $anim-std;
 
@@ -69,7 +70,8 @@
 	> img {
 		margin: 0 auto;
 		display: block;
-		width: inherit;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -88,6 +90,9 @@
 	}
 	@media screen and (min-width: $tablet){
 		width: 354px;
+	}
+	@media screen and (min-width: $desktop){
+		width: 370px;
 	}
 }
 
