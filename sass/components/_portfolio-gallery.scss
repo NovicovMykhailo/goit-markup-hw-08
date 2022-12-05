@@ -53,11 +53,7 @@
 	transform: translateY(101%);
 
 	transition: transform $anim-std;
-
-	// & > img {
-	// 	width: 100%;
-	// }
-
+	
 	.portfolio__card-item:hover &,
 	.portfolio__card-item:focus & {
 		transform: translateY(0);
@@ -71,7 +67,7 @@
 		margin: 0 auto;
 		display: block;
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 }
 

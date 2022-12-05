@@ -153,7 +153,12 @@
 					<h2 class="section__title">Чим ми займаємося</h2>
 					<ul class="gallery">
 						<li class="gallery__items">
-							<img class="gallery__photo" src="./images/box1.jpg" width="370" alt="Picture of working man on tablet" />
+							<img class="gallery__photo" 
+							src="./images/box1.jpg" 
+							width="370" 
+							alt="Picture of working man on tablet" 
+							
+							/>
 							<p class="gallery__descr">Десктопні додатки</p>
 						</li>
 						<li class="gallery__items">
@@ -166,7 +171,12 @@
 							<p class="gallery__descr">Мобільні додатки</p>
 						</li>
 						<li class="gallery__items">
-							<img class="gallery__photo" src="./images/box3.jpg" width="370" alt="Picture of working man on tablet " />
+							<img 
+								class="gallery__photo" 
+								src="./images/box3.jpg" 
+								width="370" 
+								alt="Picture of working man on tablet " 
+							/>
 							<p class="gallery__descr">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -178,7 +188,16 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team__card-gallery">
 						<li class="team__card-item">
-							<img src="./images/img1.jpg" width="270" alt="Photo of project designer" />
+							<img 
+								srcset="
+									./images/team/member-1_450.jpg 450w, 
+									./images/team/member-1_900.jpg 900w"
+								src="
+									./images/team/member-1_450.jpg" 
+								width="100vw" 
+								alt="Photo of project designer" 
+								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+								/>
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Ігор Дем'яненко</h3>
 								<p class="team__member-position">Product Designer</p>
@@ -207,7 +226,15 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img src="./images/img2.jpg" width="270" alt="Photo of Frontend Developer" />
+							<img
+								srcset="
+									./images/team/member-2_450.jpg 450w, 
+									./images/team/member-2_900.jpg 900w"
+								src="./images/team/member-2_450.jpg" 
+								width="100vw" 
+								alt="Photo of Frontend Developer"
+								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+								 />
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Ольга Рєпіна</h3>
 								<p class="team__member-position">Frontend Developer</p>
@@ -236,7 +263,15 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img src="./images/img3.jpg" width="270" alt="Photo of Marketing Specialist" />
+							<img
+								srcset="
+									./images/team/member-3_450.jpg 450w, 
+									./images/team/member-3_900.jpg 900w"
+								src="./images/team/member-3_450.jpg" 
+								width="100vw" 
+								alt="Photo of Marketing Specialist"
+								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+								/>
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Микола Тарасов</h3>
 								<p class="team__member-position">Marketing</p>
@@ -265,7 +300,15 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img src="./images/img4.jpg" width="270" alt="Photo of UI Designer" />
+							<img
+								srcset="
+									./images/team/member-4_450.jpg 450w, 
+									./images/team/member-4_900.jpg 900w"
+								src="./images/team/member-4_450.jpg" 
+								width="100vw" 
+								alt="Photo of UI Designer"
+								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+								 />
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Михайло Єрмаков</h3>
 								<p class="team__member-position">UI Designer</p>
