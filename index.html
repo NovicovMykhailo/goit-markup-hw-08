@@ -153,28 +153,49 @@
 					<h2 class="section__title">Чим ми займаємося</h2>
 					<ul class="gallery">
 						<li class="gallery__items">
-							<img 
-							class="gallery__photo" 
-							srcset="./images/gallery/box1_370.jpg 1x, 
-									./images/gallery/box1_740.jpg 2x"
-							src="./images/gallery/box1_370.jpg" 
-							width="370" 
-							alt="Picture of working man on tablet" 
-							
+							<picture>
+								<source
+									srcset="./images/gallery/box1_370.webp 1x, 
+											./images/gallery/box1_740.webp 2x" 
+									type="image/webp"/>
+									
+								<img 
+									class="gallery__photo" 
+									srcset="./images/gallery/box1_370.jpg 1x, 
+											./images/gallery/box1_740.jpg 2x"
+									src="./images/gallery/box1_370.jpg" 
+									width="370" 
+									alt="Picture of working man on tablet" 
 							/>
+							</picture>
+							
 							<p class="gallery__descr">Десктопні додатки</p>
 						</li>
 						<li class="gallery__items">
-							<img
-							srcset="./images/gallery/box2_370.jpg 1x, 
-									./images/gallery/box2_740.jpg 2x"
-							src="./images/gallery/box2_370.jpg" 
-								width="370"
-								alt="Picture of working man on cellphone"
-							/>
+							<picture>
+								<source 
+									srcset="
+									./images/gallery/box2_370.webp 1x, 
+									./images/gallery/box2_740.webp 2x" 
+									type="image'webp"/>
+								<img
+									srcset="./images/gallery/box2_370.jpg 1x, 
+										./images/gallery/box2_740.jpg 2x"
+									src="./images/gallery/box2_370.jpg" 
+									width="370"
+									alt="Picture of working man on cellphone"
+								/>
+							</picture>
+							
 							<p class="gallery__descr">Мобільні додатки</p>
 						</li>
 						<li class="gallery__items">
+						<picture>
+							<source 
+								srcset="
+									./images/gallery/box3_370.webp 1x, 
+									./images/gallery/box3_740.webp 2x"
+								type="image/webp">
 							<img 
 								class="gallery__photo" 
 								srcset="./images/gallery/box3_370.jpg 1x, 
@@ -183,6 +204,7 @@
 								width="370" 
 								alt="Picture of working man on tablet " 
 							/>
+						</picture>
 							<p class="gallery__descr">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -194,16 +216,25 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team__card-gallery">
 						<li class="team__card-item">
-							<img 
-								srcset="
-									./images/team/member-1_450.jpg 450w, 
-									./images/team/member-1_900.jpg 900w"
-								src="
-									./images/team/member-1_450.jpg" 
-								width="100vw" 
-								alt="Photo of project designer" 
-								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+							<picture>
+								<source 
+									srcset="
+										./images/team/member-1_450.webp 450w, 
+										./images/team/member-1_900.webp 900w" 
+									type="image/webp"/>
+								<source>
+
+								<img 
+									srcset="
+										./images/team/member-1_450.jpg 450w, 
+										./images/team/member-1_900.jpg 900w"
+									src="
+										./images/team/member-1_450.webp" 
+									width="100vw" 
+									alt="Photo of project designer" 
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
+							</picture>
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Ігор Дем'яненко</h3>
 								<p class="team__member-position">Product Designer</p>
@@ -232,15 +263,22 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img
-								srcset="
-									./images/team/member-2_450.jpg 450w, 
-									./images/team/member-2_900.jpg 900w"
-								src="./images/team/member-2_450.jpg" 
-								width="100vw" 
-								alt="Photo of Frontend Developer"
-								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+							<picture>
+								<source 
+									srcset="
+										./images/team/member-2_450.webp 450w, 
+										./images/team/member-2_900.webp 900w"
+									 type="image/webp"/>
+								<img
+									srcset="
+										./images/team/member-2_450.jpg 450w, 
+										./images/team/member-2_900.jpg 900w"
+									src="./images/team/member-2_450.jpg" 
+									width="100vw" 
+									alt="Photo of Frontend Developer"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								 />
+							</picture>
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Ольга Рєпіна</h3>
 								<p class="team__member-position">Frontend Developer</p>
@@ -269,15 +307,23 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img
-								srcset="
-									./images/team/member-3_450.jpg 450w, 
-									./images/team/member-3_900.jpg 900w"
-								src="./images/team/member-3_450.jpg" 
-								width="100vw" 
-								alt="Photo of Marketing Specialist"
-								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+							<picture>
+								<source 
+									srcset="
+										./images/team/member-3_450.webp 450w, 
+										./images/team/member-3_900.webp 900w" 
+									type="image/webp"/>
+								<img
+									srcset="
+										./images/team/member-3_450.jpg 450w, 
+										./images/team/member-3_900.jpg 900w"
+									src="./images/team/member-3_450.jpg" 
+									width="100vw" 
+									alt="Photo of Marketing Specialist"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
+							</picture>
+
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Микола Тарасов</h3>
 								<p class="team__member-position">Marketing</p>
@@ -306,15 +352,23 @@
 							</div>
 						</li>
 						<li class="team__card-item">
-							<img
-								srcset="
-									./images/team/member-4_450.jpg 450w, 
-									./images/team/member-4_900.jpg 900w"
-								src="./images/team/member-4_450.jpg" 
-								width="100vw" 
-								alt="Photo of UI Designer"
-								sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+							<picture>
+								<source 
+									srcset="
+										./images/team/member-4_450.webp 450w, 
+										./images/team/member-4_900.webp 900w" 
+									type="image/webp"/>
+								<img
+									srcset="
+										./images/team/member-4_450.jpg 450w, 
+										./images/team/member-4_900.jpg 900w"
+									src="./images/team/member-4_450.jpg" 
+									width="100vw" 
+									alt="Photo of UI Designer"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								 />
+							</picture>
+							
 							<div class="team__member-card-description">
 								<h3 class="team__member-name">Михайло Єрмаков</h3>
 								<p class="team__member-position">UI Designer</p>
