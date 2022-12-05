@@ -1,33 +1,37 @@
 /* ==================Portfolio Page==================== */
-// 
+//
 .portfolio__filter {
 	@include flex_centering;
 	gap: 8px;
 	margin-bottom: 50px;
 
-	@media screen and (min-width: $mobile){
-		width: 326px;
-	flex-wrap: wrap;
-	justify-content: start;
+	@media screen and (max-width: $mobile) {
+		width: calc(100vw - 70px);
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: center;
 	}
 }
 .portfolio__cards {
-	@include flex_grid(9);
-	flex-wrap: wrap;
-	z-index: -10;
-
-
-}
-.portfolio__card-overlay {
-	position: relative;
-	overflow: hidden;
-	> img{
-        margin: 0 auto;
-        display: block;
-
+	@include flex_centering;
+	flex-direction: column;
 	
+
+	@media screen and (min-width: 767px) {
+		@include flex_grid(2, 30px);
+		justify-content: start;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
+	@media screen and (min-width: $desktop) {
+		@include flex_grid(9);
+	}
 }
 
 .portfolio__card-descr {
@@ -49,46 +53,42 @@
 
 	transition: transform $anim-std;
 
-	& > img{
-		width: auto;
-	
-		
+	& > img {
+		width: inherit;
 	}
 
-    .portfolio__card-item:hover &, 
-	.portfolio__card-item:focus &{
-    transform: translateY(0);
-    }
+	.portfolio__card-item:hover &,
+	.portfolio__card-item:focus & {
+		transform: translateY(0);
+	}
 }
-.portfolio__card-item{
+
+.portfolio__card-overlay {
+	position: relative;
+	overflow: hidden;
+	> img {
+		margin: 0 auto;
+		display: block;
+		width: inherit;
+	}
+}
+
+.portfolio__card-item {
 	transition: box-shadow $anim-std;
 	text-decoration: none;
 	color: inherit;
 	display: block;
-	width: calc(100vw - 30px);	
-    &:hover, &:focus{
-        box-shadow: 
-            0px 1px 1px rgba(0, 0, 0, 0.12), 
-            0px 4px 4px rgba(0, 0, 0, 0.06), 
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-
-
-
-	
-
-	// @media screen and (min-width: $tablet) {
-	// @include flex_grid(2, 30px);
-	// // width: 354px;
-	// }
-
-	// @media screen and (min-width: $desktop) {
-	// @include flex_grid(9);
-	// }
-	// @media screen and (min-width: $tablet) {
-	// 	width: 354px;
-	// 	}
-   
+	width: calc(100vw - 2*15px);
+	&:hover,
+	&:focus {
+		box-shadow: 
+		0px 1px 1px rgba(0, 0, 0, 0.12),
+		 0px 4px 4px rgba(0, 0, 0, 0.06), 
+		 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
+	@media screen and (min-width: $tablet){
+		width: 354px;
+	}
 }
 
 .portfolio__card-titles {
@@ -96,14 +96,14 @@
 	border-top: transparent;
 	margin: 0 auto;
 	padding: 20px 24px;
-    & > h2{
-        font-size: 18px;
-        line-height: 2;
-        margin-bottom: 4px;
-    }
-    & > p{
-        color: $secondary-text-color;
-        font-size: 16px;
-        line-height: 1.87;
-    }
+	& > h2 {
+		font-size: 18px;
+		line-height: 2;
+		margin-bottom: 4px;
+	}
+	& > p {
+		color: $secondary-text-color;
+		font-size: 16px;
+		line-height: 1.87;
+	}
 }
