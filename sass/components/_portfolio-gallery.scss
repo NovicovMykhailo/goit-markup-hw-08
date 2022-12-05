@@ -1,5 +1,5 @@
 /* ==================Portfolio Page==================== */
-
+// 
 .portfolio__filter {
 	@include flex_centering;
 	gap: 8px;
@@ -14,6 +14,8 @@
 .portfolio__cards {
 	@include flex_grid(9);
 	flex-wrap: wrap;
+	z-index: -10;
+
 
 }
 .portfolio__card-overlay {
@@ -22,6 +24,7 @@
 	> img{
         margin: 0 auto;
         display: block;
+
 	
 	}
 
@@ -48,6 +51,7 @@
 
 	& > img{
 		width: auto;
+	
 		
 	}
 

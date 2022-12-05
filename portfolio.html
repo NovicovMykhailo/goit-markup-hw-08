@@ -25,32 +25,69 @@
 					Web<span class="header__logo">Studio</span>
 				</a>
 				<nav class="header-nav">
-					<button class="header-nav__button is-open" 
-					type="button" 
-					aria-expanded="false" 
-					data-menu-button>
-					<svg width="40" height="40">
-					  <use class="cross-icon"href="./images/symbol-defs.svg#cross" ></use>
-					  <use class="menu-icon"href="./images/symbol-defs.svg#menu"></use>
-					</svg>
-				</button>
-
+					<button class="header-nav__button js-open-menu" type="button" aria-expanded="false">
+						<svg width="40" height="40">
+							<use class="menu-icon" href="./images/symbol-defs.svg#menu"></use>
+						</svg>
+					</button>
 					<ul class="header-nav__menu">
-						<li><a href="./index.html" class="link header-nav__item  ">Студія</a></li>
-						<li><a href="./portfolio.html" class="header-nav__item  link active-page">Портфоліо</a></li>
-						<li><a href="" class="header-nav__item link">Контакти</a></li>
+						<li><a href="./index.html" class="header-nav__item link active-page">Студія</a></li>
+						<li><a href="./portfolio.html" class="link header-nav__item">Портфоліо</a></li>
+						<li><a href="" class="link header-nav__item">Контакти</a></li>
 					</ul>
 				</nav>
+				<div class="mobile-menu js-menu-container">
+					<button class="header-nav__button mobile-menu_button is-open js-close-menu" type="button" aria-expanded="true">	
+						<svg width="40" height="40">
+							<use class="cross-icon" href="./images/symbol-defs.svg#cross"></use>
+						</svg>
+					</button>
+
+					<ul class="mobile-nav__menu">
+						<li class="mobile-nav__item"><a href="./index.html" class="link active-page">Студія</a></li>
+						<li class="mobile-nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+						<li class="mobile-nav__item"><a href="" class="link">Контакти</a></li>
+					</ul>
+
+					<ul class="mobile-contacts">
+						<li class="mobile-contacts__item mobile-menu__phone">
+							<a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+						</li>
+						<li class="mobile-contacts__item">
+							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-links">
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Instagram
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Twitter
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							Facebook
+						</li>
+						<li class="mobile-links__item">
+							<a href="" target="_blank" rel="noopener noreferrer"></a>
+							LinkedIn
+						</li>
+					</ul>
+				</div>
 
 				<ul class="header-contacts">
 					<li>
-						<a href="mailto:info@devstudio.com" class=" header-contacts__item link">
-							<svg width="16" height="16" class="header-contacts__icons"><use href="./images/symbol-defs.svg#mail"></use></svg>
+						<a href="mailto:info@devstudio.com" class="link header-contacts__item">
+							<svg width="16" height="16" class="header-contacts__icons">
+								<use href="./images/symbol-defs.svg#mail"></use>
+							</svg>
 							info@devstudio.com
 						</a>
 					</li>
 					<li>
-						<a href="tel:+380961111111" class=" link header-contacts__item">
+						<a href="tel:+380961111111" class="link header-contacts__item">
 							<svg width="16" height="16" class="header-contacts__icons">
 								<use href="./images/symbol-defs.svg#smartphone"></use>
 							</svg>
@@ -288,6 +325,7 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
 

@@ -10,6 +10,7 @@
 	top: 0;
 	bottom: 0;
 	transition: opacity $anim-std;
+	z-index: 10000;
 
 	@media screen and (max-width: $mobile){	
 		padding: 0 15px;

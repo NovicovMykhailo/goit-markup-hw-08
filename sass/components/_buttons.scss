@@ -139,7 +139,7 @@
     right: 15px;
 	fill: currentColor;
 	transition: fill $anim-std, opacity $anim-std;
-	&:hover{
+	&:hover, &:focus{
 		fill: $accent-color;
 	}
 	

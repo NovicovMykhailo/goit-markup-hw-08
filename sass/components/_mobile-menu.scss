@@ -4,15 +4,18 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 48px 40px;
     opacity: 0;
     pointer-events: none;
+    transform: translateX(100%);
+    transition: transform $anim-std 30ms, opacity $anim-std 30ms;
 
-    transform: translateX(-100);
-    transition: transform $anim-std;
-    
-
+    &.is-open {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all;
+    }
 }
 .mobile-nav__menu{
     margin-bottom: 302px;
@@ -72,8 +75,4 @@
         top: 0;
         right: -10px;
     }
-}
-.is-open.mobile-menu{
-    opacity: 1;
-    transform: translateX(100);
 }
