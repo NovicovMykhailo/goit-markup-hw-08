@@ -7,7 +7,10 @@
     background-color: #fff;
     padding: 48px 40px;
     opacity: 0;
-    pointer-events: none
+    pointer-events: none;
+
+    transform: translateX(-100);
+    transition: transform $anim-std;
     
 
 }
@@ -72,4 +75,5 @@
 }
 .is-open.mobile-menu{
     opacity: 1;
+    transform: translateX(100);
 }
