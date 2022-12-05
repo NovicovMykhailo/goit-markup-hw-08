@@ -988,6 +988,7 @@ header {
           justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 480px) {
   .portfolio__filter {

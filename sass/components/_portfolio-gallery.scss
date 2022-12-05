@@ -4,6 +4,7 @@
 	@include flex_centering;
 	gap: 8px;
 	margin-bottom: 50px;
+	white-space: nowrap;
 
 	@media screen and (max-width: $mobile) {
 		width: calc(100vw - 70px);
