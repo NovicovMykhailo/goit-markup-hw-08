@@ -65,6 +65,10 @@ ul {
 }
 
 /* ==================Body Styles==================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;

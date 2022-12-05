@@ -1,4 +1,8 @@
 /* ==================Body Styles==================== */
+
+html {
+	scroll-behavior: smooth;
+  }
 body {
 	background-color: $primary-page-color;
 	color: $primary-text-color;
