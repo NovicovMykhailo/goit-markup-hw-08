@@ -999,7 +999,7 @@ header {
           flex-direction: column;
   gap: 30px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio__cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1049,9 +1049,6 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__card-descr > img {
-  width: inherit;
-}
 .portfolio__card-item:hover .portfolio__card-descr, .portfolio__card-item:focus .portfolio__card-descr {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1077,6 +1074,7 @@ header {
   color: inherit;
   display: block;
   width: calc(100vw - 30px);
+  max-width: 450px;
 }
 .portfolio__card-item:hover, .portfolio__card-item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
