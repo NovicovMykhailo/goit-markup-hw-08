@@ -77,14 +77,14 @@
 }
 .hero__title {
 	color: $primary-page-color;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 26px;
 	line-height: 1.61;
+	letter-spacing: 0.06em;
 
 	margin-bottom: 40px;
 
 	@media screen and (min-width: $tablet) {
-		font-weight: 900;
 		font-size: 44px;
 		line-height: 1.36;
 

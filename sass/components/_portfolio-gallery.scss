@@ -5,12 +5,9 @@
 	gap: 8px;
 	margin-bottom: 50px;
 	white-space: nowrap;
-
-	@media screen and (max-width: $mobile) {
-		width: calc(100vw - 70px);
-		flex-wrap: wrap;
-		justify-content: start;
-	}
+	width: 326px;
+	flex-wrap: wrap;
+	justify-content: start;
 
 	@media screen and (min-width: $tablet) {
 		width: 100%;

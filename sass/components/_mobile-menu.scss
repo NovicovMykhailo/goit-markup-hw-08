@@ -12,6 +12,9 @@
     pointer-events: none;
     transform: translateX(100%);
     transition: transform $anim-std 30ms, opacity $anim-std 30ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &.is-open {
         opacity: 1;
@@ -19,9 +22,6 @@
         pointer-events: all;
         
     }
-}
-.mobile-nav__menu{
-    margin-bottom: 302px;
 }
 
 .mobile-nav__item{
