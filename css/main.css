@@ -39,7 +39,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -51,11 +51,11 @@ ul {
   line-height: 1.16;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -616,15 +616,14 @@ header {
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06em;
-  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
   }
 }
 
