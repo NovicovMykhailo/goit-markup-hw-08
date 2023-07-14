@@ -14,17 +14,15 @@
 	font-size: 16px;
 	line-height: 1.85;
 	text-align: center;
-	
-	padding: 10px 24px;
-	
 
-	transition: 
-		color $anim-std, 
-		background-color $anim-std;
-    &:hover, &focus{
-        background-color: #188ce8;
-	    color: $pure-white-logo-color;
-    }
+	padding: 10px 24px;
+
+	transition: color $anim-std, background-color $anim-std;
+	&:hover,
+	&focus {
+		background-color: #188ce8;
+		color: $pure-white-logo-color;
+	}
 
 	@media screen and (min-width: $desktop) {
 		padding: 10px 32px;
@@ -47,28 +45,32 @@
 
 	padding: 6px 22px;
 
-	transition: 
-		color $anim-std, 
-		background-color $anim-std,
-		box-shadow $anim-std;
-    &:hover, &:focus{
-        background-color: $accent-color;
-	color: $pure-white-logo-color;
-	box-shadow: 
-        0px 3px 1px rgba(0, 0, 0, 0.1), 
-        0px 1px 2px rgba(0, 0, 0, 0.08), 
-        0px 2px 2px rgba(0, 0, 0, 0.12);}
+	transition: color $anim-std, background-color $anim-std, box-shadow $anim-std;
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		color: $pure-white-logo-color;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
 }
-.footer__subscribe-btn{
+
+.active {
+	background-color: $accent-color;
+	color: $pure-white-logo-color;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.footer__subscribe-btn {
 	padding: 10px 28px;
 	font-weight: 600;
 	line-height: 1.85;
-	
+
 	@include flex_centering(inline-flex);
 	gap: 10px;
 
 	fill: $pure-white-logo-color;
-
 }
 
 .modal__close-btn {
@@ -84,39 +86,36 @@
 	@include flex_centering(inline-flex);
 
 	transition: fill $anim-std;
-	 &:hover{
+	&:hover {
 		fill: $accent-color;
-	 }
+	}
 }
 
-.modal__submit-btn{
+.modal__submit-btn {
 	width: fit-content;
 	padding: 10px 52px;
 	margin-top: 30px;
 	align-self: center;
 }
 
-.checkbox-icon{
+.checkbox-icon {
 	display: inline-block;
 	border: 1.8px solid $primary-text-color;
 	border-radius: 2px;
-	Width: 16px;
+	width: 16px;
 	height: 15px;
-	transition: 
-		border $anim-std,
-		background-image $anim-std,
+	transition: border $anim-std, background-image $anim-std,
 		background-color $anim-std;
-    .checkbox:checked + &{
-        background-color: $accent-color;
-        background-image: url(../images/Checked-icon.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-origin: border-box;
-        border-color: $accent-color;
-    }
-
+	.checkbox:checked + & {
+		background-color: $accent-color;
+		background-image: url(../images/Checked-icon.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-origin: border-box;
+		border-color: $accent-color;
+	}
 }
-.header-nav__button{
+.header-nav__button {
 	border: none;
 	background-color: transparent;
 	@include flex_centering;
@@ -125,25 +124,20 @@
 	margin: 10px;
 	padding: 0;
 
-	@media screen and (min-width: $tablet){
+	@media screen and (min-width: $tablet) {
 		display: none;
 	}
-
-	
 }
-.mobile-menu_button{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 0;
-    right: 15px;
+.mobile-menu_button {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	right: 15px;
 	fill: currentColor;
 	transition: fill $anim-std, opacity $anim-std;
-	&:hover, &:focus{
+	&:hover,
+	&:focus {
 		fill: $accent-color;
 	}
-	
-
-
 }
-

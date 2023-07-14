@@ -5,9 +5,11 @@
 	gap: 8px;
 	margin-bottom: 50px;
 	white-space: nowrap;
-	width: 326px;
+	
 	flex-wrap: wrap;
 	justify-content: start;
+
+	@media screen and (min-width: 480px) {width: 326px;}
 
 	@media screen and (min-width: $tablet) {
 		width: 100%;
@@ -19,6 +21,7 @@
 	@include flex_centering;
 	flex-direction: column;
 	gap: 30px;
+	min-height: 400px;
 	
 
 	@media screen and (min-width: $tablet) {
@@ -30,6 +33,9 @@
 
 	@media screen and (min-width: $desktop) {
 		@include flex_grid(9);
+		align-items: flex-start;
+		height: 1275px;
+		
 	}
 }
 
@@ -107,3 +113,5 @@
 		line-height: 1.87;
 	}
 }
+
+
