@@ -1,5 +1,5 @@
 //json
-import data from "../project-cards.json" assert { type: "json" };
+import data from "../project-cards.json" width { type: "json" };
 
 import portfolioCard from "./portfolio-card.js";
 import converter from "./category-converter.js";
